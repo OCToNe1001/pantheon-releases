@@ -1,2 +1,32 @@
-# pantheon-releases
-PANTHEON — 神域決戦 Windowsベータ版の配布・ゲーム内アップデート
+# PANTHEON — 神域決戦
+
+神話の神々が戦う、ドット絵の2D対戦格闘ゲーム。Windows ベータ版です。
+
+## ダウンロード
+
+**[Windows ベータ版 0.5.0-beta.1 をダウンロード（約317 MB）](https://github.com/OCToNe1001/pantheon-releases/releases/download/v0.5.0-beta.1/PANTHEON-Windows-v0.5.0-beta.1.zip)**
+
+1. ZIPをダウンロードして、すべて展開します。
+2. 展開したフォルダーの **PANTHEON.exe** を開きます。
+3. オンライン対戦は「スタート → オンライン対戦」から選びます。
+
+Windows 10 / 11（64ビット）、Microsoft Edge WebView2 Runtime が必要です。初期キャラはミカエル・スサノオ・アヌビス。ゲーム内の神貨で全24キャラを解放できます。
+
+## 遊べるモード
+
+- 1人用：難易度を選べるCPU8連戦
+- 2人用：同じPCで対戦
+- オンライン：ランダムマッチ／招待コードで友達と対戦
+- トレーニング／チュートリアル
+
+オンライン対戦では、相手のキャラクターは試合開始時に公開されます。
+
+## アップデート
+
+ゲーム内の **設定 → アップデート → アップデートを確認** から、新しい版を取得できます。ダウンロード後「ゲームを終了して更新」を選ぶと、更新して起動し直します。
+
+アップデート機能のない旧版からは、ゲームを終了し、新しいZIPの中身をフォルダーごと上書きしてください。セーブデータ（神貨・解放キャラ・設定）は `%LOCALAPPDATA%\PANTHEON` に保存され、引き継がれます。
+
+[リリース履歴](https://github.com/OCToNe1001/pantheon-releases/releases) · [不具合を報告](https://github.com/OCToNe1001/pantheon-releases/issues)
+
+Releases内の英数字64文字のファイルと `latest.json` はゲーム内更新用です。通常は上のダウンロードリンクだけで導入できます。
