@@ -1,55 +1,24 @@
 {
   "schema": 1,
-  "build": 50004,
-  "version": "0.5.0-beta.4",
+  "build": 50005,
+  "version": "0.5.0-beta.5",
   "notes": [
-    "【更新概要】beta.4：全24人の空中弱・強・技と、しゃがみ弱・強・技を個別化。空中被弾のダウン・無敵付き復帰、武器ドットの再点検、多数の固有技を追加・調整しました。オンライン対戦は双方ともbeta.4へ更新してください。",
-    "【空中の操作】ジャンプ中のJ＝空中弱、K＝空中強、U＝空中技。全24人で3種類を使い分けます。弱・強はメーター不要、空中技は神技メーター1本。命中時は弱→強→技へキャンセル可能で、空振りからのキャンセルはできません。",
-    "【空中モーション】全24人・計72種類に個別名、予備動作、振り抜き、体の傾き、着地硬直を設定。剣の落とし斬り、槍突き、弓の斜め射撃、爪・拳・盾の降下、羽扇の旋舞、魔術・蛇尾を作り分けました。既存のキャラ素材を使う描画モーションです。",
-    "【しゃがみの操作】↓＋J＝しゃがみ弱、↓＋K＝しゃがみ強、↓＋U＝しゃがみ技。全24人に3種類を設定。すべて下段で、下ガードで防げます。弱・強はメーター不要、しゃがみ技は1本を消費します。",
-    "【しゃがみの個性】低い剣・槍・杖、足元への拳、地面を走る炎や水、低空の矢、近い冥火設置、蛇尾の小打ち・大薙ぎ・地龍波を追加。地上・空中・しゃがみの飛び道具・設置技には共通の同時使用制限があります。",
-    "【空中被弾とダウン】空中で被弾した相手は、空中のまま即座に行動復帰せず、落下してから24Fダウン→24F起き上がりへ進みます。地上の通常被弾を一律ダウンにする変更ではありません。",
-    "【復帰無敵】ダウン・起き上がりの48Fは打撃・飛び道具・投げを受けません。起き上がり直後にも6Fの無敵を付けました。覚醒中のカムイでもこの復帰無敵を投げが抜けないようにしています。付与済みの継続ダメージは持続します。",
-    "【空中連係と着地】被弾して落下中の相手には空中追撃できますが、接地後のダウンには追撃不可。空中技を出す前に着地すると未発生の攻撃を中断し、着地の隙が生まれます。降下攻撃は着地時の打撃から硬直へ進みます。",
-    "【武器ドット】全24人の通常・攻撃アトラスの透明領域と切り出しを再検査。隣コマから混ざる穂先・小片を描画時に除外し、武器キャラの通常攻撃も手元と武器がつながる専用8コマへ統一。左右反転時も同じ補正を適用します。",
-    "【武器の向き】空中強の有効時間に、鎌や槍が後ろを向いた予備動作コマを表示していた箇所を修正。判定が出る時刻と前方への振り抜きポーズを合わせました。",
-    "【ロキ】仮面は往路・復路で各1回、最大2ヒット。往路で当たっても消えず、同じ行程で重なり続けても連打にはなりません。22F後に折り返し、寿命44F。各ヒットの威力は旧技の約65％、各ヒットのメーター獲得量は半分。",
-    "【ロキ・高速短剣】地上弱を発生4F・硬直9F・基礎威力32、強を7F・17F・68に調整。しゃがみ強は6F・16F・52。空中弱も4F、空中強7F。短いリーチを素早い斬撃と連係で活かします。",
-    "【ロキ・三閃投げ】Lの投げが成功すると、専用モーションで短剣斬撃を3回。掴みから6/14/22Fで基礎威力55ずつ、通常のコンボ・カウンター補正を適用。左右入力で方向変更、最後に相手を吹き飛ばします。ガード・アーマーを掴める短い投げ間合いは維持。",
-    "【ロキ・瞬間移動】敵へ向かう地上ダッシュで背後へ回り込みます。8F目に出現、全体20F、出現直後3F無敵、再使用90F。後方ダッシュは通常の退避移動で、予備動作は被弾で中断します。",
-    "【ロキ・一度きりの身代わり】1ラウンド1回、致死ダメージを受ける直前にその一撃を完全に無効化。直前のHPを維持したまま幻影の身代わりを残し、敵の背後へ即座に回り込みます。18F無敵、出現動作12F。回復ではありません。",
-    "【ロキ・身代わりの範囲】打撃・飛び道具・投げ・継続ダメージが対象。発動した一撃の新規状態異常・追加ダメージ・メーター獲得も無効。付与済みの状態異常は残り、タイムアップを取り消せません。2回目の致死ダメージは通常通り。新ラウンドで使用回数が戻ります。",
-    "【ティアマト・竜化】残りHP30％以下で自動発動。被ダメージ20％軽減・被弾硬直35％短縮、鱗の輝きと竜のオーラを表示。被弾直前のHPで判定し、打撃・飛び道具・投げ・継続ダメージを軽減します。ひるみは残り、投げの演出時間・ダウン時間・ガード硬直は変わりません。",
-    "【ヘスティア】燃焼を30Fごと3→4ダメージに増加。通常技は3秒で18→24、神技は4秒で24→32。直接ダメージを追加で下げる相殺は行わず、継続分を強化しました。",
-    "【ティアマト】原初の毒を30Fごと2→3ダメージに増加。通常技は4秒で16→24、神技は6秒で24→36。ガード成功時は付与されず、重ね掛けは時間の更新のみです。",
-    "【ジャストガード】成功受付を6→8F（約0.10→0.13秒）へ緩和。ガードを開始するタイミングと、攻撃に合うガードの高さが必要です。ガード長押しだけで何度も発動する仕様ではありません。",
-    "【ツクヨミ・見切り】見切り反撃の基礎威力を40→50へ強化。月相なしの実ダメージ目安は41→51。月相の10/20/30％強化、コンボ補正・カウンター補正は引き続き適用。背後への回り込みと再使用60Fは維持します。",
-    "【建御雷神・雷返し】ジャストガード成功時、相手の位置へ雷を落として36F硬直。月相なしの見切りと同じダメージに揃えています。自分はその場で守り、再使用60F。アーマーには硬直を与えますが、完全無敵中の相手には当たりません。投げは防げません。",
-    "【ルー・連続突き】弱攻撃の連打に加え、キーボード・ゲームパッド・タッチの長押しで継続可能。3回の上限を撤廃。弱の範囲170、押し戻し1.8で連続命中しやすく調整。離すと最後の一突きから硬直へ移ります。",
-    "【ルー・連続突きの隙】次の一突きは、発生＋有効時間＋4F以降に継続。ガードには切り返せる隙があり、被弾・距離の離れ・空振りには弱い技です。空中強の槍による急降下と着地硬直は維持します。",
-    "【伏羲・蛇尾】↓＋Jは速い小打ち（範囲140）、↓＋Kは長い薙ぎ（215）、↓＋Uは八卦・地龍波（245／1本）。空中弱・強・技にも尾攻撃を追加。静止した蛇尾と動く蛇尾が二重に出ないよう、下半身の描画を切り替えます。",
-    "【ミカエル・翼移動】空中ダッシュを10F×速度9から12F×速度11へ変更し、通常の横移動量を約90→132へ延長。移動中も空中弱・強・技を出せます。空中1回、着地で回復、翼移動自体に無敵はありません。",
-    "【ミカエル・空中技】Uは翼を広げる天翼・聖光斬。前方範囲210の聖剣で斬り、軽く浮き上がります。空中弱→強→聖光斬の命中連係で翼移動を攻めに使えます。",
-    "【カムイ】前方ダッシュのひるみ無効を18→30F（0.3→0.5秒）へ延長。再使用は発動から60F。ダメージは通常通り受け、投げも有効。残りHP30％以下の常時アーマー・与ダメージ20％アップは維持します。",
-    "【イブ・知識の実】残りHP30％以下で、地上で行動可能になると1ラウンド1回実を食べます。24F目で最大HPの30％分を回復し、攻撃力20％アップ、発生・硬直を15％短縮。全動作42Fで、強化はラウンド中持続します。",
-    "【イブ・実の制限】ダウンや被弾硬直中には食べ始めません。24F目より前に打撃を受けると回復・強化は失敗し、そのラウンドでは再使用できません。新ラウンドで使用回数・強化をリセットします。",
-    "【アヌビス・冥影の瞬間移動】敵へ向かう地上ダッシュを背後へ回り込む瞬間移動へ変更。8F目に出現、全体20F、出現直後3F無敵、再使用90F。メーター不要。後方ダッシュは通常の退避移動です。壁際でも出現位置を調整します。",
-    "【ケツァルコアトル】二段ジャンプを維持し、前方ダッシュで背後へ瞬間移動できるようにしました。空中でも使用可能で、出現後は空中弱→強→技へ。二段ジャンプと空中瞬間移動はそれぞれ空中1回、着地で回数回復。瞬間移動の再使用は90Fです。",
-    "【ケツァルコアトル・空中連係】弱は羽扇の小払い、強は双翼の旋舞、Uは周囲を巻き込む翠翼の旋風。Uで少し浮き上がり、1本消費。二段ジャンプ後も命中キャンセルが可能です。",
-    "【アポロン】通常の矢の移動距離を弱120→220、強198→352へ延長。空中の矢も弱10→13F、強14→18Fの寿命へ延長。通常射撃はメーター不要。Uの矢雨は維持し、↓＋Uには低空の陽光矢を追加。",
-    "【ヘカテ・呪い強化】メーター獲得量35％減少に加え、呪い中は1秒ごとに現在のメーターを20減らします。通常3秒で最大60、神技4秒で最大80。0未満にはならず、ガード成功時は付与されません。",
-    "【モルペウス・夢砕き】夢の技・神技で硬直中の相手に追撃すると、次の一撃のダメージが25％アップ。一度の夢付与につき追撃1回で消え、硬直終了時も解除。通常のコンボ補正は適用されます。頭上の夢の輪で状態を示します。",
-    "【フォルトゥナ・U多段技】三連・運命の金貨を追加。7F間隔で3枚、最大3ヒット。基礎威力36／1枚、押し戻し3、神技メーター消費はまとめて1本。しゃがみ・空中でも高さを変えて三枚を放ちます。",
-    "【固有技の紹介】キャラ資料に「固有技・特性」を追加。全24人の操作・発動条件、効果、使い方と連係、回数・消費・注意点を詳しく記載。未解放キャラも無料で読めます。",
-    "【技の資料】技の自動実演を「地上／しゃがみ／空中」に分け、全24人の新しい技名、ガードの高さ、発生、メーター消費を表示。閲覧で神貨や戦績は変化しません。",
-    "【入力とオンライン】弱長押しの状態をキーボード・パッド・タッチから取得して通信に追加。再計算で連続突き、瞬間移動、知識の実、夢砕き、ダウン・無敵・呪いが同じ結果になるよう保存状態を統一しました。",
-    "【バージョンの互換性】新しい戦闘ルールの識別子をbeta.4専用に更新。ランダムマッチは同版同士のみ、招待部屋も異なる戦闘版の参加を拒否します。旧版同士の部屋は引き続き利用できます。",
-    "【セーブと更新】既存の神貨、キャラ解放、プロフィール、好感度、設定は引き継ぎ。ゲーム内の設定→アップデートから更新できます。更新内容.txtはZIPに同梱し、同じ詳細をゲーム内の更新画面にも表示します。",
-    "【スサノオ・雷刀二閃】地上弱の命中から弱へキャンセル可能に。弱が2回連続ヒットすると、自動で強攻撃を放ち、その追撃だけガード貫通。ガード・空振りはカウントせず、硬直切れ・別の攻撃・被弾で連係をリセット。通常のコンボ補正・間合い・無敵・アーマーは適用し、手動の強は従来通りガード可能です。",
-    "【オーディン・火力と双鴉】全攻撃の与ダメージを10％強化。地上弱の発生と同時にフギン・ムニンの2羽が飛び、相手へ追従する援護射撃を追加。各基礎威力12・最大38F、通常のコンボ補正あり。メーター消費・追加獲得なし、最大2羽まで。ガード可能で、発生前に弱を潰されるとカラスも出ません。",
-    "【ヘスティア・炎の判定】地上・しゃがみ・空中の炎弾の半径を約25％拡大し、描画にも同じ大きさを反映。神技「守護炎」の横範囲を230→265へ拡大。ダメージ・燃焼量・メーター消費は変えず、炎を当てやすくしました。",
-    "【ベローナ・大盾の戦意】ガード成功ごとに1スタック、最大5。1スタックにつき与ダメージ5％上昇、最大25％。ラウンド中は攻撃しても失わず、次のラウンドでリセット。打撃・飛び道具の防御成功を数え、盾形の5つの印で可視化。単なるガード維持・被弾・アーマー耐えでは増えません。",
-    "【ミスラ・誓約の裁き】適切な高さのガード開始8F以内に防ぐと、基礎威力55・硬直30Fの反撃。その後、自動で強攻撃を発動。盾の閃光と十字の剣光を追加。再使用60F。裁きはアーマーをひるませますが完全無敵には無効、強攻撃には通常の間合い・コンボ補正・ガード判定があります。"
+    "【起動時の自動更新】起動時に最大6秒で更新確認。新版があれば差分をダウンロード・整合性確認し、自動で適用して再起動します。進行状況を表示し、「今回は更新せずに起動」で中止できます。通信失敗時は現在の版で起動。再起動直後の再確認を一度だけ省き、更新失敗時のループを防ぎます。beta.4以前からbeta.5への最初の更新は、設定→アップデートから行ってください。",
+    "【クロノス／ルー】通常の弱・強・下段・空中弱・空中強と、クロノスの残影による連続5ヒット目で強制ダウン。5発目から落下・ダウン・起き上がり中は追撃不可、復帰直後6Fも無敵です。時間停止も解除します。ガード・空振り・アーマー受けはヒット数に含めず、途切れたコンボは1から。ルーの長押し連突きは維持し、ガード時の隙やジャストガードは従来通りです。",
+    "【チュートリアル】ガード練習の相手が、攻撃の届く間合いまで近づいて中段の弱攻撃を繰り返します。予備時間45F、以後は行動可能な待ち時間75F。下がっても追ってくるため、空振りし続ける状態を防止。通常ガードとジャストガードの成功を達成として判定し、被弾・アーマー受けでは達成しません。",
+    "【アポロン】通常矢の移動距離を弱220→180、強352→308へ短縮。空中矢の寿命も弱13→11F、強18→15Fに短縮。矢の雨・神技・ダメージ・発生速度は維持します。数値は発射位置からの弾の移動距離です。",
+    "【アヌビス】地上の通常弱を「魂弾」に変更。速度18×寿命10Fで移動距離180、アポロンの弱矢と同程度。メーター不要、中段ガードで防御可能。通常強・しゃがみ弱・空中弱は近接のままです。背後へ回る瞬間移動と使い分けられます。",
+    "【モルペウス】夢の必殺技の被弾硬直を10F延長（地上・しゃがみ・空中に適用）。神技の睡眠を70→82Fへ延長し、地上の相手を打ち上げず眠らせるよう修正。次の追撃1回のダメージ25％上昇は維持。空中被弾時は既存の落下・復帰を優先し、ガード時には睡眠を与えません。",
+    "【ケツァルコアトル】空中強を「翠翼の急襲」に変更。発生9F・持続24F・基礎威力88・前方速度9／落下速度12で斜め下へ突進。着地後18Fの隙。二段ジャンプ・空中瞬間移動から使用でき、空中で命中すれば旋風への連係も可能。空振り時は着地の隙を狙われます。",
+    "【ダウン演出】全24人の復帰を、のけぞり・転倒・受け身姿勢・接地・静止・体を起こす・膝立ち・立ち戻りの8段階に。既存ドット4姿勢を使った補間アニメーションと接地の砂煙を追加。各コマの透明輪郭を計測し、左右反転でも体や武器が床に埋まりにくいよう接地位置を補正。ダウン・起き上がりの各24Fと無敵時間は維持します。",
+    "【ベローナ】盾バフは最後のガード成功から480F（8秒）。ガードで残り時間を更新し、時間切れで解除。最大5スタックでさらにガードに成功すると、防いだ攻撃の本来のダメージ30％を反射し、全スタック・残り時間を0に。反射は基礎硬直12F、追加ゲージ獲得なし、反射同士の連鎖なし。相手の完全無敵・アーマー・ダメージ軽減は有効、投げは反射できません。盾の印の下に残り時間を表示し、発動時は光輪を出します。",
+    "【ミスラ】Uを「誓盾・三連光裁」に変更。1本消費で光の盾を送り、相手の近くへ追尾して12／22／32F目にビームを3連射（各基礎威力48、硬直22F、移動距離480）。ビームは発射後は直進し、盾は38F目から戻ります。盾自体に攻撃判定はなく、盾・ビームが残る間は再使用不可。地上・しゃがみ・空中Uに適用し、それぞれのガード高さを引き継ぎます。ジャストガードからの裁き・自動強攻撃は維持します。",
+    "【休日衣装・好感度】全24人の好感度Lv.10（650ポイント）で「神々の休日」衣装を解放。キャラ資料→交流・好感度から、通常／休日衣装とイラスト／戦闘ドットを切り替えて閲覧できます。未解放でもプレビューは無料。着用を保存すると、選択イラスト・戦闘ドット・神技カットインにも反映し、オンラインでは相手の衣装を表示します。衣装は戦闘能力を変更しません。",
+    "【贈り物の調整】神蜜は100神貨で好感度+10→+7、花束は300神貨で+35→+26に調整。これまで獲得した好感度、読める交流イベント、所持アイテムは引き継ぎます。",
+    "【お知らせ・メールボックス】起動時に更新内容を表示。「今日はもう表示しない」で日本時間の翌朝5時まで非表示にでき、タイトルとメニューからいつでも再読できます。メールボックスで配布された神貨・衣装・称号を受取可能。期限と受取履歴を確認し、同じ配布IDの二重受取を防ぎます。称号は設定のプロフィールから変更できます。",
+    "【ログインボーナス】通信で日付を確認すると、1日1回500神貨を自動付与。日本時間の朝5時に更新します。通信できない場合はメールボックスの「受信を確認」から再試行できます。",
+    "【デイリーミッション】毎日3つ：ログイン／アーケードを1試合最後までプレイ（勝敗・難易度不問）／好感度アイテムを1個贈る。各達成につき500神貨をミッション画面で受け取れます。全達成で1,500神貨、ログインボーナスとは別枠。毎朝5時更新。購入だけ・途中退出では達成せず、受取状態はセーブに保存します。",
+    "【オンライン・セーブ】beta.5専用の戦闘ルールで同じ版同士をマッチング。招待対戦も双方の更新が必要です。神貨・解放キャラ・プロフィール・好感度・設定は引き継がれます。beta.4までの変更は前回のリリース履歴をご覧ください。"
   ],
   "objectsBaseUrl": "https://github.com/OCToNe1001/pantheon-releases/releases/download/v0.5.0-beta.2",
   "files": [
@@ -65,13 +34,13 @@
     },
     {
       "path": "PANTHEON.Updater.exe",
-      "bytes": 123904,
-      "sha256": "ce82db748e2169817a2c259d34c33952d462aab687d41aa179807a7250755349"
+      "bytes": 125440,
+      "sha256": "5c54d51419364e47be1c5607dfe12ec1322ec7973efffdf848c3de2191d6bd5c"
     },
     {
       "path": "PANTHEON.exe",
-      "bytes": 148480,
-      "sha256": "4e2e018017ba4aa4ee0af46d4d86a5a5a9d585860c60c3b128e1548ebea171e2"
+      "bytes": 153088,
+      "sha256": "be6e325518efc80a95a2a1cb3526df6188f18e34bbc8aaedaa15e944eee6a592"
     },
     {
       "path": "PANTHEON.exe.config",
@@ -95,13 +64,13 @@
     },
     {
       "path": "bridge.js",
-      "bytes": 1497,
-      "sha256": "399910af89d93dc60ca9013bfb09e9f019c4e6c6442b7121fb7ded9a28e1d685"
+      "bytes": 1544,
+      "sha256": "227fc06ed6c10ece01f8d37ea026334baab23617b56430e290f909c22a59ba1a"
     },
     {
       "path": "game/aerial-moves.mjs",
-      "bytes": 6327,
-      "sha256": "96b7e19761de2b7550150824bb8748817123453a372397a93e0f10fff702455c"
+      "bytes": 6500,
+      "sha256": "96712f8ecf5e3f231ea890e56d22ce7e17be8ee862d52789e086c7c82b18db48"
     },
     {
       "path": "game/affinity-chapters.mjs",
@@ -110,13 +79,13 @@
     },
     {
       "path": "game/affinity.mjs",
-      "bytes": 14729,
-      "sha256": "4ed0fe8bff5962733da8c1cd54becc0787e06dfa76a13a1c2b5dc5887bb982ff"
+      "bytes": 14728,
+      "sha256": "ab4e56d2df320343a646ca00c65d966c11a09010c2e5475b80a9fd47da331750"
     },
     {
       "path": "game/app.mjs",
-      "bytes": 56436,
-      "sha256": "2c28da7615ec3f8f8d325bd416f8f11890b14bced9c6aea3904ddaec2d723c0f"
+      "bytes": 57843,
+      "sha256": "755f916eabea351fcfa37119e98f8350a91fef91fca1606aafe82edb58bd43d2"
     },
     {
       "path": "game/arcade.mjs",
@@ -130,8 +99,8 @@
     },
     {
       "path": "game/art.mjs",
-      "bytes": 10246,
-      "sha256": "8e48ee4044b6ce22171e800e8078050bf78da19c4f71f989adf03e727de00cfb"
+      "bytes": 11721,
+      "sha256": "8ef5cc5cd1c46eb6456cb7f392520187544522d730ce4800bf9a03972c310866"
     },
     {
       "path": "game/assets/audio/anubis-meikai-no-tenbin.mp3",
@@ -677,6 +646,246 @@
       "path": "game/assets/characters/tsukuyomi-sprite.webp",
       "bytes": 1198462,
       "sha256": "6e50b1e9d6352267cccc3676e2fdf7af828f9a1a4ac4418ad6d01f5db81aff46"
+    },
+    {
+      "path": "game/assets/costumes/anubis-holiday-portrait.png",
+      "bytes": 1869702,
+      "sha256": "de2efad4f10d4d8dc9186ace4138aed04765385e8ed8fe03e0051bbbea73f798"
+    },
+    {
+      "path": "game/assets/costumes/anubis-holiday-sprite.png",
+      "bytes": 1913181,
+      "sha256": "9c214d8a8a6936e24ba4972253a4a674e23939e674e25372c80ab8e4af490bc0"
+    },
+    {
+      "path": "game/assets/costumes/apollo-holiday-portrait.png",
+      "bytes": 2048812,
+      "sha256": "57de44b4c2492bad0bd5e5546c87d25c512fbb68e89f433cc41a40db0be27345"
+    },
+    {
+      "path": "game/assets/costumes/apollo-holiday-sprite.png",
+      "bytes": 2108482,
+      "sha256": "3b40df967d7a26e80f7327d8d0e6a20d4e2d217c31c6ed8f4dbb9b43e3da8d46"
+    },
+    {
+      "path": "game/assets/costumes/bellona-holiday-portrait.png",
+      "bytes": 1056336,
+      "sha256": "a7c82a1d52ed2341b0e86a5b77ed5f885f3929e0e0614a2bb6dc633acb772de2"
+    },
+    {
+      "path": "game/assets/costumes/bellona-holiday-sprite.png",
+      "bytes": 1681528,
+      "sha256": "3b0643fbe25a43dfbf7002afceefe071282fbfa5401286897efb52260aea199b"
+    },
+    {
+      "path": "game/assets/costumes/eve-holiday-portrait.png",
+      "bytes": 2050385,
+      "sha256": "1880ddc45311502485e5494df3093c9b8fdb8b7da805e694fc843fcaa7f4f776"
+    },
+    {
+      "path": "game/assets/costumes/eve-holiday-sprite.png",
+      "bytes": 2097903,
+      "sha256": "1803414373f9c5325b63ffab03619b154547cb9269067d1ff5a1913706a8e2ed"
+    },
+    {
+      "path": "game/assets/costumes/fortuna-holiday-portrait.png",
+      "bytes": 2076872,
+      "sha256": "b4d2c0758dc659d1701a371e266b089c15b109d8dd59460f3b09b65ae25c26f5"
+    },
+    {
+      "path": "game/assets/costumes/fortuna-holiday-sprite.png",
+      "bytes": 2003891,
+      "sha256": "d6d92b4bcc863e9d164487443c33c60c5574bcec9b93c9c08bf9b6852bacedaf"
+    },
+    {
+      "path": "game/assets/costumes/fuxi-holiday-portrait.png",
+      "bytes": 1716006,
+      "sha256": "85a907bb4138bfc414b9c360b93e14b5b7dbec015c283634a61292b13fc0da88"
+    },
+    {
+      "path": "game/assets/costumes/fuxi-holiday-sprite.png",
+      "bytes": 1958993,
+      "sha256": "2b6190ee7ed233056802ce8dc215530d68a42d4149ef461cf9f3482cbd79f979"
+    },
+    {
+      "path": "game/assets/costumes/hecate-holiday-portrait.png",
+      "bytes": 1316115,
+      "sha256": "589a97cec8b7310d5a53a17f06f4fae8efe6b9a560ee6c7a5032b225baf93734"
+    },
+    {
+      "path": "game/assets/costumes/hecate-holiday-sprite.png",
+      "bytes": 1884346,
+      "sha256": "f4e5ea04aefb079482b0e3cfcf70dc07b4d1529c8d61a0d7a9eed21ffc41f891"
+    },
+    {
+      "path": "game/assets/costumes/hephaestus-holiday-portrait.png",
+      "bytes": 1396847,
+      "sha256": "6c926b4179992463b69aadf3cf0324f89a9c1e469e017813df5bee9d04bac21a"
+    },
+    {
+      "path": "game/assets/costumes/hephaestus-holiday-sprite.png",
+      "bytes": 1851061,
+      "sha256": "6e74d9e2d70a04a2a8433bf38c2ec194dd29c80e6813c156dc5ad7ffcdaa04fd"
+    },
+    {
+      "path": "game/assets/costumes/hestia-holiday-portrait.png",
+      "bytes": 2213661,
+      "sha256": "009348e66602b32cd05937a31ff40c439de6606c4285d8773253e3431d3d853d"
+    },
+    {
+      "path": "game/assets/costumes/hestia-holiday-sprite.png",
+      "bytes": 1753534,
+      "sha256": "43d05f7fa6eee2bb231d7b507d9272b7b152491a8b4e9a5d9d9cd04100393524"
+    },
+    {
+      "path": "game/assets/costumes/kamui-holiday-portrait.png",
+      "bytes": 1923779,
+      "sha256": "4d85fc73d9cdc6f7ec347e41d1c2a7ead8e069abca293387d06b00ddc3a33279"
+    },
+    {
+      "path": "game/assets/costumes/kamui-holiday-sprite.png",
+      "bytes": 1595029,
+      "sha256": "31d1c8058c72b0d5c9a9a0393449292facea958f5ac7c3e372b9053f6380397a"
+    },
+    {
+      "path": "game/assets/costumes/kronos-holiday-portrait.png",
+      "bytes": 1831842,
+      "sha256": "9456673b6caf71954029f4e989c5a46cfa8a3500d7038ffe4968aca2b5c7175c"
+    },
+    {
+      "path": "game/assets/costumes/kronos-holiday-sprite.png",
+      "bytes": 1440155,
+      "sha256": "3ff9cbf9ec6f1fcdea293897bceb1dc0a6db48b819e93bfd1eec73881e2c0f90"
+    },
+    {
+      "path": "game/assets/costumes/loki-holiday-portrait.png",
+      "bytes": 1628427,
+      "sha256": "095f5ea667a438873f25fa70530c67db826dd2109ef5b942801464965c7375fb"
+    },
+    {
+      "path": "game/assets/costumes/loki-holiday-sprite.png",
+      "bytes": 1491771,
+      "sha256": "f3db5415bae9dd9af7bd8b09630a091dafb8c32f3ab9fb7c94067084d0b31e43"
+    },
+    {
+      "path": "game/assets/costumes/lugh-holiday-portrait.png",
+      "bytes": 1024340,
+      "sha256": "5370b082a97e33094d3128ad9d3bf66b9958a516af9bd46d803f8cc78089144a"
+    },
+    {
+      "path": "game/assets/costumes/lugh-holiday-sprite.png",
+      "bytes": 1669390,
+      "sha256": "7e15e18e3b64f261c97dd4a94178d978e0849de6170d190d136bec575b3a4e59"
+    },
+    {
+      "path": "game/assets/costumes/michael-holiday-portrait.png",
+      "bytes": 2032839,
+      "sha256": "3295865fac837fa45604307aee86b894ffb184c2673ec94425625d4ccda3ffc8"
+    },
+    {
+      "path": "game/assets/costumes/michael-holiday-sprite.png",
+      "bytes": 1965082,
+      "sha256": "5c29c2d952568ade520e4fee5366369ba9c66f71be45b4f595ff0f5aa2bb34e4"
+    },
+    {
+      "path": "game/assets/costumes/mithra-holiday-portrait.png",
+      "bytes": 1964522,
+      "sha256": "67558da1473d45c2602b6b7f0c7ffe0bbd382fd12afd3119913ef1dd2fb691b0"
+    },
+    {
+      "path": "game/assets/costumes/mithra-holiday-sprite.png",
+      "bytes": 1878727,
+      "sha256": "d80f49320fd87444bda4eccefece42163479ba10d30d5794e5b0469a8980255d"
+    },
+    {
+      "path": "game/assets/costumes/morpheus-holiday-portrait.png",
+      "bytes": 1855339,
+      "sha256": "fe928f4ee97e895c2cc9f320e4cc82b66c15fa86ca8087c0f26754b8d8c5fb6b"
+    },
+    {
+      "path": "game/assets/costumes/morpheus-holiday-sprite.png",
+      "bytes": 1618794,
+      "sha256": "206e36587669c15356ff2c1dbd06e31b8a1ea0dcbce0240cef531ab8a59ac521"
+    },
+    {
+      "path": "game/assets/costumes/nuwa-holiday-portrait.png",
+      "bytes": 1740914,
+      "sha256": "709e12d9163548490bd3fbe8312c622253c6def7596c749cd242e232b76138fa"
+    },
+    {
+      "path": "game/assets/costumes/nuwa-holiday-sprite.png",
+      "bytes": 2382371,
+      "sha256": "f7f46ffe4be0b34ecdbd04940399948b36b27e04e831b7d04668ae036c80b2b4"
+    },
+    {
+      "path": "game/assets/costumes/odin-holiday-portrait.png",
+      "bytes": 1934132,
+      "sha256": "5df2aad48ba6352f0ccb9ac52e1e4d47ccd597c0b7bc7d2efa0d0aedd2c4b645"
+    },
+    {
+      "path": "game/assets/costumes/odin-holiday-sprite.png",
+      "bytes": 1535164,
+      "sha256": "f4d57eb6cbb7ea7d64659591cac009a2391a7e25142887071a7e896c9703d542"
+    },
+    {
+      "path": "game/assets/costumes/poseidon-holiday-portrait.png",
+      "bytes": 1118043,
+      "sha256": "1aa62c08b2da1d34cdd78567cd5b1def8880eddcdda5013479ba6488de98f3c8"
+    },
+    {
+      "path": "game/assets/costumes/poseidon-holiday-sprite.png",
+      "bytes": 2050431,
+      "sha256": "95ffae1ff2aba130f19e56dbd77df91b9207562d61753693eaa4a43bf1a2fc03"
+    },
+    {
+      "path": "game/assets/costumes/quetzalcoatl-holiday-portrait.png",
+      "bytes": 1255317,
+      "sha256": "c66f2ec9a810e104641985cf7b0473e4310c7479b72bd569e974d93351fe1020"
+    },
+    {
+      "path": "game/assets/costumes/quetzalcoatl-holiday-sprite.png",
+      "bytes": 2327377,
+      "sha256": "31b0656f1cab04ec79d99eba9fc8fc1c4567c5795f65a04e5d18281fea3167e2"
+    },
+    {
+      "path": "game/assets/costumes/susanoo-holiday-portrait.png",
+      "bytes": 2146339,
+      "sha256": "349c6412b0a80d47871445a18a99e162eb4b23ac46e407b980107c31984c8feb"
+    },
+    {
+      "path": "game/assets/costumes/susanoo-holiday-sprite.png",
+      "bytes": 1854142,
+      "sha256": "bd2cef69af2f7590a45f85009d3a64bb4fec53313f0590938de65ab90aac96c9"
+    },
+    {
+      "path": "game/assets/costumes/takemikazuchi-holiday-portrait.png",
+      "bytes": 910487,
+      "sha256": "f4b60058c760dd2f4712c7a94d053cf433b76331c8c0a9bad4907d27ef49aebe"
+    },
+    {
+      "path": "game/assets/costumes/takemikazuchi-holiday-sprite.png",
+      "bytes": 1642437,
+      "sha256": "7b6a3fca1ed038a6ae82a46d00e04ab9e613969749f02d95bf78c7d33fa53ef0"
+    },
+    {
+      "path": "game/assets/costumes/tiamat-holiday-portrait.png",
+      "bytes": 2196097,
+      "sha256": "32c1ce5847124ba8e816e9be032b71eec1db097707f8415c33b13d2f89a71abb"
+    },
+    {
+      "path": "game/assets/costumes/tiamat-holiday-sprite.png",
+      "bytes": 2120817,
+      "sha256": "5cc7f438cad0488a628953a84d7d11e877ffa7cd1a46649a9ca88fdbcad15c21"
+    },
+    {
+      "path": "game/assets/costumes/tsukuyomi-holiday-portrait.png",
+      "bytes": 1341404,
+      "sha256": "63fea73011a4dfe81eec64be0e45f6aedbf341acaa94f937595870b1cf005096"
+    },
+    {
+      "path": "game/assets/costumes/tsukuyomi-holiday-sprite.png",
+      "bytes": 1774925,
+      "sha256": "9ff78e527df05909d20c18dfa0a2e0396883f32545f1cc57c32caa23ce1b0f5c"
     },
     {
       "path": "game/assets/image-manifest.json",
@@ -1345,8 +1554,8 @@
     },
     {
       "path": "game/character-traits.mjs",
-      "bytes": 18006,
-      "sha256": "760768e3558d6252399d61426be72fe834835c72d6af8a7b3f2e6cfa27592a25"
+      "bytes": 18675,
+      "sha256": "5e252772fbcfbc0c601d0bada45a37234e539ddd210ded4d7c22264d17a13f8a"
     },
     {
       "path": "game/characters.css",
@@ -1355,8 +1564,8 @@
     },
     {
       "path": "game/combat-balance.mjs",
-      "bytes": 14734,
-      "sha256": "c5c8d5b9d65f6b571136d8b563bc32c10ae42aafe80f6ed56fe4a743da7c51a6"
+      "bytes": 15528,
+      "sha256": "deeef7dc4dec5b8f47a95943ec274aaba84ea5b81d0be684361f9d2b78b768e2"
     },
     {
       "path": "game/combat-effects.mjs",
@@ -1364,9 +1573,39 @@
       "sha256": "643bdd37ff0b714c65f2fe37254db715379102f1a104a3f829f0208af4df6b94"
     },
     {
+      "path": "game/community-ui.mjs",
+      "bytes": 9716,
+      "sha256": "98ceb88b7b5f0df7b529600eb66a7ab0ce92b9959414e4729165971e4909fed6"
+    },
+    {
+      "path": "game/community.css",
+      "bytes": 2307,
+      "sha256": "881046ecbbb3263b35dba73097136958bc602fdcc1c9d1eb728f2762a0143611"
+    },
+    {
+      "path": "game/community.mjs",
+      "bytes": 1504,
+      "sha256": "8a69f4a190ba97739a32c702d5ee96b566511c9f811bbf3e559d71e46c868095"
+    },
+    {
+      "path": "game/costume-data.mjs",
+      "bytes": 48315,
+      "sha256": "102b904a72e0a1ca01e8e60be69c54ec363d32418b105496ccfe1970d14b3762"
+    },
+    {
+      "path": "game/costumes.mjs",
+      "bytes": 1254,
+      "sha256": "5f4e7573f6353aa3427d5e9c9eb45094b815e1c2713d39a28051ecb8f13ab273"
+    },
+    {
       "path": "game/crouch-moves.mjs",
-      "bytes": 3624,
-      "sha256": "b2dab6455d6f82cf832a17edb208b86e115b13855e4b7d799a1e2c1da0b55639"
+      "bytes": 3732,
+      "sha256": "d478e1fd3ec990a513816bce28fe6aa95c9aeeac6e4c4a19e89d83df06f403ad"
+    },
+    {
+      "path": "game/daily-missions.mjs",
+      "bytes": 1734,
+      "sha256": "be0b59b45ad1ac76d8a1a8d977ef541402bda0785ed37f2a68cd3f28040d18c7"
     },
     {
       "path": "game/desktop.css",
@@ -1380,13 +1619,13 @@
     },
     {
       "path": "game/dossier.mjs",
-      "bytes": 16069,
-      "sha256": "d4416a66a592045ec68c85482902660ec1489bba0406946e605db882f7b8c539"
+      "bytes": 18338,
+      "sha256": "ac6dc187f4210e48fc29225a1e1abe79dd84dd4486d65e5ed8bf982b1c082bfb"
     },
     {
       "path": "game/engine.mjs",
-      "bytes": 41299,
-      "sha256": "6bf8713768c9cbd8e5291ea1c74076099bf2a21318d2abecb4de2380c63ac932"
+      "bytes": 43757,
+      "sha256": "7f43d1048a838c39716c390fbad8e74f9624c4fcd3411471938d762ca0a311c3"
     },
     {
       "path": "game/features.css",
@@ -1406,7 +1645,7 @@
     {
       "path": "game/index.html",
       "bytes": 30571,
-      "sha256": "cc1373137c10667083f5f4d1cc17f6f471fc67e04e9a4cd514276bb7e1250f65"
+      "sha256": "153b25601ae17d1c4360c4168a427671fe77e39dbaa5ae7abc2097553ff98838"
     },
     {
       "path": "game/loki.mjs",
@@ -1420,8 +1659,8 @@
     },
     {
       "path": "game/match-found.mjs",
-      "bytes": 2867,
-      "sha256": "1c6582f22d7516dc32d293f9c859df555a414544b4084e73b7c6b10e91c11cf2"
+      "bytes": 2990,
+      "sha256": "acf30aeaeb0a0f443d5692cbce2bca66596555947a705324a391a4eef3f5630d"
     },
     {
       "path": "game/menu-keys.mjs",
@@ -1475,8 +1714,8 @@
     },
     {
       "path": "game/online.mjs",
-      "bytes": 7879,
-      "sha256": "81d1453e91a49d6a56141fb784a17fdea7306210cce7bd1b09b7ae1fe97b27ff"
+      "bytes": 8044,
+      "sha256": "07bbca99b9a5f176b406d993431577da649f28c09ff49f63b96175c06b93642a"
     },
     {
       "path": "game/opening.mjs",
@@ -1490,8 +1729,8 @@
     },
     {
       "path": "game/profile-rules.mjs",
-      "bytes": 3618,
-      "sha256": "b9214ad5d9deb3e969eeccac6bc75e0f57e911e301b7bae75af4b5f1e5cea241"
+      "bytes": 3893,
+      "sha256": "752690469409f5321f00512e48cc7ca54362958694cc1699ae95f07aaa442adf"
     },
     {
       "path": "game/profile.mjs",
@@ -1500,28 +1739,28 @@
     },
     {
       "path": "game/progression.mjs",
-      "bytes": 3435,
-      "sha256": "9bc6dea8b7bf3e6299b32517897fa1cc0f818b782096029240b93eeb8ad13cd7"
+      "bytes": 7810,
+      "sha256": "3aee7cf2dfcaf4300786728fe3df2c6ae5bd31098f2687ff2193e1654f43ea44"
     },
     {
       "path": "game/recovery-hulls.mjs",
-      "bytes": 17994,
-      "sha256": "b38dd77c80290db413e26e6daf444c001a6ac710b822881eced405fa5cd2ec14"
+      "bytes": 23698,
+      "sha256": "314e23dccf808e14364b0cdcd48a870a71b24cd98f1bb7d7409a74626a4f662e"
     },
     {
       "path": "game/recovery.mjs",
-      "bytes": 722,
-      "sha256": "db07b27757c6046f04af46388dc3b8b83de5c8ce82981e71492eb793da99486e"
+      "bytes": 981,
+      "sha256": "732f1dda22bfb18440843f789b8124f9cb5f8e1231379a0cabf697301bb2de58"
     },
     {
       "path": "game/release-notes.mjs",
-      "bytes": 14121,
-      "sha256": "1997a90a96d82a18ee85c7643b5b84a864972c7a7b13656b568af388550727da"
+      "bytes": 6644,
+      "sha256": "d582fca8b7fa585ef45efeac100d76a5405bd1fa51aebe920a125d0fb12bd179"
     },
     {
       "path": "game/render.mjs",
-      "bytes": 16238,
-      "sha256": "900c4372002e7cf3740fd04e3753cf49bd545e569980cb249cb31d13542776d9"
+      "bytes": 16714,
+      "sha256": "d4ab5bd6f7bac4b6184f07293cd91c48659cb20c5d5dd09e3197bbffa3356234"
     },
     {
       "path": "game/room-code-input.mjs",
@@ -1565,8 +1804,8 @@
     },
     {
       "path": "game/status.mjs",
-      "bytes": 5435,
-      "sha256": "ea10b3423b33d52ee0f356cc19339005741fb3adc8e1eeb85b628f0a4cc3375c"
+      "bytes": 5791,
+      "sha256": "600e00eb8baed2ce17a6e368030f12252c4b1dc65c4a978f27a001e1c07bb3c9"
     },
     {
       "path": "game/story-pairs.mjs",
@@ -1585,8 +1824,8 @@
     },
     {
       "path": "game/super-presentation.mjs",
-      "bytes": 14614,
-      "sha256": "38e4572687473d56b097a7a1018825a8b069dad1bf8fe20e05f116fc65f2c65f"
+      "bytes": 14643,
+      "sha256": "731855121d2ff8da51423d6bd6ba98ca93d751a59a33fc93efd7c0dd46ea9f01"
     },
     {
       "path": "game/tail-motion.mjs",
@@ -1600,8 +1839,8 @@
     },
     {
       "path": "game/tutorial.mjs",
-      "bytes": 3190,
-      "sha256": "48979c032e2378d8cfb129d8cef008599ca568cd26ee95b62f29464d285e95e4"
+      "bytes": 3588,
+      "sha256": "1930a6473d17ea6858e961461191bd48d9ab25af5f3ff0bb3d43187b62c7dce5"
     },
     {
       "path": "game/update-ui.mjs",
@@ -1630,13 +1869,13 @@
     },
     {
       "path": "はじめに.txt",
-      "bytes": 26980,
-      "sha256": "0a5532ea0cd50aaff83c89038bd607de57d3832fd7dc7ac301e3d9b2f1e18308"
+      "bytes": 27857,
+      "sha256": "6160d961846018d8490b11b0976a692664eadea4d6de91e9d2d7c99d94e1f116"
     },
     {
       "path": "配布ファイル一覧.json",
-      "bytes": 55535,
-      "sha256": "f09a094e64e34e0cb82a028b8399e3667ab0568dfd0871de28e41d2f21b38b8c"
+      "bytes": 65639,
+      "sha256": "9f5dc03a8062c3a824f555c9b6668f87a228eff42bf56a791ff431161dfc4c6e"
     }
   ]
 }
