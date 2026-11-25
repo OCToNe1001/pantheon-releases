@@ -1,0 +1,1458 @@
+{
+  "schema": 1,
+  "build": 50001,
+  "version": "0.5.0-beta.1",
+  "notes": [
+    "ランダムマッチと検索キャンセルを追加",
+    "ゲーム内アップデートを追加",
+    "キャラ選択からの解放に対応したWindowsベータ版"
+  ],
+  "objectsBaseUrl": "https://github.com/OCToNe1001/pantheon-releases/releases/download/v0.5.0-beta.1",
+  "files": [
+    {
+      "path": "Microsoft.Web.WebView2.Core.dll",
+      "bytes": 703328,
+      "sha256": "43319abb99f77a74cc7e05c987e8e3dc9029bfd95bb2bbb9eef61c4976998313"
+    },
+    {
+      "path": "Microsoft.Web.WebView2.WinForms.dll",
+      "bytes": 38752,
+      "sha256": "ad7fa76950f997368c17e8cc83cbaa2e75f8f9b4e66ad793ced7db82cb66caec"
+    },
+    {
+      "path": "PANTHEON.Updater.exe",
+      "bytes": 123904,
+      "sha256": "e047cff3ddba85198e1ec3dd638baba8b5aff516469966b7507832408823f6aa"
+    },
+    {
+      "path": "PANTHEON.exe",
+      "bytes": 148480,
+      "sha256": "41774af12159b3b04cb5536722ca7e0f35b4f2fd27c3e6c64481ddeda96d02c5"
+    },
+    {
+      "path": "PANTHEON.exe.config",
+      "bytes": 274,
+      "sha256": "0e32f91e94bc970d53b8ac96aa904db060a31acbaa0305e451ddc91cb14cd687"
+    },
+    {
+      "path": "WebView2-LICENSE.txt",
+      "bytes": 1487,
+      "sha256": "0af8f1b807512aae39c2ac1aa4d0cae65cabecb6fd554b8439a5162a0d6eca55"
+    },
+    {
+      "path": "WebView2-NOTICE.txt",
+      "bytes": 3894,
+      "sha256": "106423785c5b7eba0a8e61d1837f2132e9c828e20ad530f565d981c1df60dd90"
+    },
+    {
+      "path": "WebView2Loader.dll",
+      "bytes": 195424,
+      "sha256": "37996d81f0f3a13e93549f74f722fce25d70b00e93e4a470c34b75d7231bfd1d"
+    },
+    {
+      "path": "bridge.js",
+      "bytes": 1497,
+      "sha256": "58a03b89899c147c54a0f93aa869f5c947b5db4442f5436b19465fe6064e75b9"
+    },
+    {
+      "path": "game/app.mjs",
+      "bytes": 53015,
+      "sha256": "4e510ed8588445d8ce115659e7943affe2763e38d2cdeae7f213a5e4b926971b"
+    },
+    {
+      "path": "game/arcade.mjs",
+      "bytes": 2433,
+      "sha256": "6d6c0092ea3c75933dbfe0e942978bb2ff35f468aa020f368bc47c573ef2d6c4"
+    },
+    {
+      "path": "game/art.mjs",
+      "bytes": 5993,
+      "sha256": "38da72e24511e10a0fb084c8c93c756d6e5e6550d2fdf96e51cd8b63b823f7ea"
+    },
+    {
+      "path": "game/assets/audio/anubis-meikai-no-tenbin.mp3",
+      "bytes": 5941868,
+      "sha256": "3edcbfe833c9f26146b68b7bb2a21b3c7c4a1bac48f0237220d27de2bec2cab7"
+    },
+    {
+      "path": "game/assets/audio/apollo-no-senritsu.mp3",
+      "bytes": 5903228,
+      "sha256": "0a41cef3be3cc805a2e1b82a3d6cf4df51434546e9d7a8d27085646256dcb04b"
+    },
+    {
+      "path": "game/assets/audio/bellona-senka-megami.mp3",
+      "bytes": 5880380,
+      "sha256": "afe7af8131b6414470de861f1898b72dd24a85b9dcaac59751f3cc387f1c502c"
+    },
+    {
+      "path": "game/assets/audio/beyond-the-genesis.mp3",
+      "bytes": 6525810,
+      "sha256": "61890a30e9aa8fde08cede91b727eb412a66f84c3540750c5ee750bcb83d03ab"
+    },
+    {
+      "path": "game/assets/audio/eve-kindan-no-kajitsu.mp3",
+      "bytes": 5983196,
+      "sha256": "afd410b327009deb244e42382e2884ddea0a36148462e0ef3903bf0a546150c0"
+    },
+    {
+      "path": "game/assets/audio/fortuna-waltz.mp3",
+      "bytes": 5695916,
+      "sha256": "1381fe61ace7a6040449a8b86cd3c26079c9006d6e1389f12087430101b19b60"
+    },
+    {
+      "path": "game/assets/audio/fuxi-eichi.mp3",
+      "bytes": 5920028,
+      "sha256": "40c0b3cbb796be20b23e9434488a7acf1e8a663b7e3e1db032613d9a5dc023da"
+    },
+    {
+      "path": "game/assets/audio/hecate-no-mittsu-no-michi.mp3",
+      "bytes": 5987228,
+      "sha256": "a7d2a4f358b3105ca990829e3b0740c568e66018463143548a23b23ce2aaadba"
+    },
+    {
+      "path": "game/assets/audio/hephaestus-shinkou-no-tsuchi.mp3",
+      "bytes": 5779580,
+      "sha256": "eeee162ca806bf447072fda7da0dbeb351429ef0720681876a3d7edd9192d3fb"
+    },
+    {
+      "path": "game/assets/audio/hestia-waga-na-wa-hestia.mp3",
+      "bytes": 6082316,
+      "sha256": "5f0162e299aa01cead429b983e143f36e29ba815c4e852a2c2badf923a5ba5c9"
+    },
+    {
+      "path": "game/assets/audio/kamui-kamigami-no-ibuki.mp3",
+      "bytes": 5500028,
+      "sha256": "05a10c727193f171bd5b459cbf93584cba4a0d4e4d2402c6707648ae63b882a6"
+    },
+    {
+      "path": "game/assets/audio/kronos-no-haguruma.mp3",
+      "bytes": 6060140,
+      "sha256": "3f4a067e6091cb65e994fbbab675a02ae0c1bf066ca1017ac4d6bdd9db2a4a20"
+    },
+    {
+      "path": "game/assets/audio/loki-shuuen-no-utage.mp3",
+      "bytes": 5527916,
+      "sha256": "ec37041dbb0b813ba7047f6eb9850aada33d1668ca8f0d3bd14752cdfecb53a7"
+    },
+    {
+      "path": "game/assets/audio/lugh-ougon-no-eiyuu.mp3",
+      "bytes": 5457356,
+      "sha256": "3bc23c150e2b02c0b4aa129405201c141078ddef0ba9de611f2316b4cbb99b9a"
+    },
+    {
+      "path": "game/assets/audio/manifest.json",
+      "bytes": 9900,
+      "sha256": "99e3b4aa73160635a97f07f79b9828447c37f4d25ee653efd07bd4c2d9166ee2"
+    },
+    {
+      "path": "game/assets/audio/menu-screen.mp3",
+      "bytes": 5478282,
+      "sha256": "98dfde32ec62cd558823b4b2fc16d44f3f39f52c79b8f27951173c96f2975eea"
+    },
+    {
+      "path": "game/assets/audio/menu-track.json",
+      "bytes": 280,
+      "sha256": "6581e04c89cb44ee5e45865ce3566ee554ace24852491b60d0dfb73c6dbee266"
+    },
+    {
+      "path": "game/assets/audio/michael-tenyoku-no-shinpan.mp3",
+      "bytes": 5253740,
+      "sha256": "dbc92d381a9e79daa79853cc8e5f0e053a5a1afea9896b7a75525a60b0134ccc"
+    },
+    {
+      "path": "game/assets/audio/mithra-no-chikai.mp3",
+      "bytes": 5875340,
+      "sha256": "936e3dd27f670e92815bb0e8be9aebb410f49866bdacdee59f342439c236f656"
+    },
+    {
+      "path": "game/assets/audio/morpheus-no-yume.mp3",
+      "bytes": 5917340,
+      "sha256": "48f0a90205a806d7e0a52ac20ace4ae6f3f6bbb29ed6da67d5efce76044b8483"
+    },
+    {
+      "path": "game/assets/audio/nuwa-no-inori.mp3",
+      "bytes": 6119948,
+      "sha256": "0556f7285c152a507e4e802e428bdc3dbeb21b138c0c31ddbe069a2aaab0cf2c"
+    },
+    {
+      "path": "game/assets/audio/odin-hoppou-no-senka.mp3",
+      "bytes": 5001740,
+      "sha256": "96b7664e44137dbce5f8de940e3c6a8b5a3dd91bb30ec636c2838bef5a49eedf"
+    },
+    {
+      "path": "game/assets/audio/opening-track.json",
+      "bytes": 335,
+      "sha256": "8f6689bc7fe9fb15a355dd7588e451fe2a732799d59cd2d66db51cb3de9941e6"
+    },
+    {
+      "path": "game/assets/audio/poseidon-soukai-no-haou.mp3",
+      "bytes": 6071228,
+      "sha256": "ddddd3524d2958450acf577116f7b7f604156bb5244a4d67a1d21d844e7f415f"
+    },
+    {
+      "path": "game/assets/audio/quetzalcoatl-midori-no-tsubasa.mp3",
+      "bytes": 5667356,
+      "sha256": "c0b9541e03a652b478049046a5fc8068a8a5c49c6214c78684bc2adf2277e833"
+    },
+    {
+      "path": "game/assets/audio/susanoo-aragami.mp3",
+      "bytes": 4755116,
+      "sha256": "6a4c9cdf41b6b66216a536bb87daac9f4f0fb151f35cee85d05f9bdfcd06b988"
+    },
+    {
+      "path": "game/assets/audio/takemikazuchi-no-kourin.mp3",
+      "bytes": 5618636,
+      "sha256": "f1be1b4952b9f95eac6a4c1fd9818dc81532abc7b0f78a6e5ba13efa4045fb6e"
+    },
+    {
+      "path": "game/assets/audio/tiamat-gensho-no-haha.mp3",
+      "bytes": 6082316,
+      "sha256": "a908bb039b786de2bf4a202a9635fa0999ec734ec27c98f4eb77b09f0488ff9f"
+    },
+    {
+      "path": "game/assets/audio/tsukuyomi.mp3",
+      "bytes": 5862236,
+      "sha256": "5e0bb4a56e7781e6bc9beab4b3f52ae2475102b5d213310aa3cf25b3fb8c3469"
+    },
+    {
+      "path": "game/assets/brand/pantheon-logo.png",
+      "bytes": 1221193,
+      "sha256": "2ee86f306d081189662ce851777277be56d43b273afb619d98be9d3a5b3d3c14"
+    },
+    {
+      "path": "game/assets/brand/pantheon-mark.png",
+      "bytes": 986102,
+      "sha256": "54ca8fcefa200faa6b86f29e747cc202ef9f79aae998db09a1c300cb2be56746"
+    },
+    {
+      "path": "game/assets/characters/anubis-motion.webp",
+      "bytes": 1206874,
+      "sha256": "c9590ed631743aa9d47f9179d8de39568ade6205eb82ee46f0fa74a3dcdfadbd"
+    },
+    {
+      "path": "game/assets/characters/anubis-portrait.webp",
+      "bytes": 977842,
+      "sha256": "457b22d8200c0ffc2b2f89c6a687fcac068ab05f8044e3ade3f8f0f2b057322a"
+    },
+    {
+      "path": "game/assets/characters/anubis-sprite.webp",
+      "bytes": 1576848,
+      "sha256": "73b7899a72915149de961f6f4ebb3ca4356094bd48cdda849cc9634ad4dec141"
+    },
+    {
+      "path": "game/assets/characters/apollo-motion.webp",
+      "bytes": 1540054,
+      "sha256": "9174621c590c3d979df828618422989e166895420f6a926f3afa44bf29c74810"
+    },
+    {
+      "path": "game/assets/characters/apollo-portrait.webp",
+      "bytes": 978160,
+      "sha256": "9d09a1212d3590eaa964f3064a1d1edd411d1ffea5b337827a0e5b36ffc1c82d"
+    },
+    {
+      "path": "game/assets/characters/apollo-sprite.webp",
+      "bytes": 1526976,
+      "sha256": "a717ca737c3d7c7cca95c14a5e8816a64a4e3d7722b5bae389406fd796550993"
+    },
+    {
+      "path": "game/assets/characters/bellona-motion.webp",
+      "bytes": 706582,
+      "sha256": "69e2a7ac2ad16b3cb5d4eba49a7ce1947bbba29f2bd459a4a58a7aa232617a22"
+    },
+    {
+      "path": "game/assets/characters/bellona-portrait.webp",
+      "bytes": 1042330,
+      "sha256": "7eaa2c1fdf8a331e44cac536f8125a0b36b5c2404895f969a188dec40cbe54f6"
+    },
+    {
+      "path": "game/assets/characters/bellona-sprite.webp",
+      "bytes": 1316944,
+      "sha256": "34e03df5ac4b6d9ca714db1ce90d44754e9b0d1fe1a1d3e33e1cab926090778e"
+    },
+    {
+      "path": "game/assets/characters/eve-motion.webp",
+      "bytes": 1125134,
+      "sha256": "617360cb4763f3c8c9a861f0c10f4646f953131776987a2c4eba2fd887804a9c"
+    },
+    {
+      "path": "game/assets/characters/eve-portrait.webp",
+      "bytes": 931122,
+      "sha256": "e63d94b15b149baecd72a31e898a9a4376706eef69f9ce2db0d5b1892a1d3f3d"
+    },
+    {
+      "path": "game/assets/characters/eve-sprite.webp",
+      "bytes": 1252018,
+      "sha256": "e1df794fb93dc25d13b3c4764ebc8f4569aa5e7ec02ded8feb5f04feabc68e01"
+    },
+    {
+      "path": "game/assets/characters/fortuna-motion.webp",
+      "bytes": 1073954,
+      "sha256": "d45b2362fd367d913971a69cbd5722402bf5829e8c34fce603016351c27f951f"
+    },
+    {
+      "path": "game/assets/characters/fortuna-portrait.webp",
+      "bytes": 874834,
+      "sha256": "00c9f18d8f8b880aa25a312d3444bc6066a50e05bba837d49403a435c4721606"
+    },
+    {
+      "path": "game/assets/characters/fortuna-sprite.webp",
+      "bytes": 1702448,
+      "sha256": "a06b205cb5b1db3ce816dd7efb516580507b9c7fd9874b7db9f22b8fe0a60cd8"
+    },
+    {
+      "path": "game/assets/characters/fuxi-motion.webp",
+      "bytes": 1517232,
+      "sha256": "acf69b9515c6a08e7d3f18fd58a48e6b7f77352cbdbc1115927c916b28b364f5"
+    },
+    {
+      "path": "game/assets/characters/fuxi-portrait.webp",
+      "bytes": 1235506,
+      "sha256": "424b5902515f44020ad1da99fb4095f942388f2fb80875ec4ec118f044f0b4ca"
+    },
+    {
+      "path": "game/assets/characters/fuxi-sprite.webp",
+      "bytes": 1816564,
+      "sha256": "cf21389dcfd065e472e0067f608c2a2a81e215dbef7ae981958304923a604bdc"
+    },
+    {
+      "path": "game/assets/characters/hecate-motion.webp",
+      "bytes": 1263084,
+      "sha256": "2f8edbec542add4d9682fcaaacb4dd49c487ae4860fd8ec9f1266cb3d4298b0a"
+    },
+    {
+      "path": "game/assets/characters/hecate-portrait.webp",
+      "bytes": 797968,
+      "sha256": "eafbd22245e1685545404c2a9e841e066e84e985d2daa50635c0cc396beba22a"
+    },
+    {
+      "path": "game/assets/characters/hecate-sprite.webp",
+      "bytes": 1260638,
+      "sha256": "0b2565decfa40099c8e44b027176006893591e9fbdbfdf8393fdb411b0ea6dc3"
+    },
+    {
+      "path": "game/assets/characters/hephaestus-motion.webp",
+      "bytes": 1060222,
+      "sha256": "9bbd32787cf040bad7b860d052b07af101754de7f9997c2e3caa474241c7c38f"
+    },
+    {
+      "path": "game/assets/characters/hephaestus-portrait.webp",
+      "bytes": 1107626,
+      "sha256": "1b57f25d7038329d0b9380eb62253dc4dd70c5049d6c810198a41d5f79c91c25"
+    },
+    {
+      "path": "game/assets/characters/hephaestus-sprite.webp",
+      "bytes": 1329908,
+      "sha256": "38a150fa205a58f312417a175ca92d227da05149edc99599db507dc827e84e11"
+    },
+    {
+      "path": "game/assets/characters/hestia-motion.webp",
+      "bytes": 939098,
+      "sha256": "ab644f40f56d9fd6ec22b804ca16bf5b355a96f227e7d5bf58f959fb49847f93"
+    },
+    {
+      "path": "game/assets/characters/hestia-portrait.webp",
+      "bytes": 1040450,
+      "sha256": "2f5b433f56a9d3a28760209a1277f5289f3a49c025da5bbed9fb187e716f477e"
+    },
+    {
+      "path": "game/assets/characters/hestia-sprite.webp",
+      "bytes": 1359622,
+      "sha256": "9633e83e71002ef5c888bc0cd9fed2e719db4adc73b0ee25921ac1be9f24494f"
+    },
+    {
+      "path": "game/assets/characters/kamui-motion.webp",
+      "bytes": 906346,
+      "sha256": "355cf7a6802477f85b10e52bfedd4fcac3e4ea104f4dc42560d2227d649777cc"
+    },
+    {
+      "path": "game/assets/characters/kamui-portrait.webp",
+      "bytes": 597338,
+      "sha256": "245f1ca27c6d2756b09bfb28a865c7af49b28bf05a5ddd0286c2a9414f47269b"
+    },
+    {
+      "path": "game/assets/characters/kamui-punch.webp",
+      "bytes": 1166256,
+      "sha256": "a39eebfd2ea8371d75221292f896eb255d94f5a500e3e854b4cd5dbff4541c87"
+    },
+    {
+      "path": "game/assets/characters/kamui-slam.webp",
+      "bytes": 1165054,
+      "sha256": "6763bed65fbeb8784474610d7e34be89c6bdeb4c8dd835ef804a4ffc9dc0908a"
+    },
+    {
+      "path": "game/assets/characters/kamui-sprite.webp",
+      "bytes": 1159284,
+      "sha256": "7bdf47f493360df12f3528da4b168e6028d6563f06cd3f8da1b781e336bc41a5"
+    },
+    {
+      "path": "game/assets/characters/kamui-stomp.webp",
+      "bytes": 1128576,
+      "sha256": "2f143dab7e6453b3ac101fdfc65a106c200f680386487131a768c97c607163d1"
+    },
+    {
+      "path": "game/assets/characters/kronos-motion.webp",
+      "bytes": 690596,
+      "sha256": "6aaf35fbd2ac01aa416cd123fd4b71ee069f3e2295ebbed8719eaa6ec44e4322"
+    },
+    {
+      "path": "game/assets/characters/kronos-portrait.webp",
+      "bytes": 995902,
+      "sha256": "9cf1fb238c603055c82fd9db20f45e457e53af8ad998bc1047f7cf4b25a1334a"
+    },
+    {
+      "path": "game/assets/characters/kronos-sprite.webp",
+      "bytes": 1578884,
+      "sha256": "b2f00d502d2290885c58ba676b65db4a562d49a1c9c77aea3460957bab735d26"
+    },
+    {
+      "path": "game/assets/characters/loki-motion.webp",
+      "bytes": 824506,
+      "sha256": "5b5d981f921b6362fdff12035b3eef2d0848b2eadcf003a5b804bd0705f3a5b0"
+    },
+    {
+      "path": "game/assets/characters/loki-portrait.webp",
+      "bytes": 711490,
+      "sha256": "a464934320770c8fbf2a5c0913b42921c84d2d73f61456689fea71f15615d5d2"
+    },
+    {
+      "path": "game/assets/characters/loki-sprite.webp",
+      "bytes": 1007640,
+      "sha256": "e594e42af7ed0c02b7a0c34bdb205b0c8a550cef1f22508657bda33814207684"
+    },
+    {
+      "path": "game/assets/characters/lugh-motion.webp",
+      "bytes": 643926,
+      "sha256": "c96162e23282449ccecdb73eb7d391157240625d1aa47ea8dbda8f16db314a8b"
+    },
+    {
+      "path": "game/assets/characters/lugh-portrait.webp",
+      "bytes": 891140,
+      "sha256": "4cc1767512706e1f1d76f9c428eb08c7c0fced6d45c20b6e297a011e1a6c83ba"
+    },
+    {
+      "path": "game/assets/characters/lugh-sprite.webp",
+      "bytes": 1295072,
+      "sha256": "346b4ad6f55dd9d043c5ca253f67a4baaebd87f37206e31e09f6d9c211879c26"
+    },
+    {
+      "path": "game/assets/characters/michael-motion.webp",
+      "bytes": 1266190,
+      "sha256": "91349409e9f55e84854b816164f39dd384409c27c2d556e1216c9f8549f50c7e"
+    },
+    {
+      "path": "game/assets/characters/michael-portrait.webp",
+      "bytes": 1494582,
+      "sha256": "3520c3d92b313d9788d361223e5fdb3176d191d7ea1fac3f500d5f53e027451b"
+    },
+    {
+      "path": "game/assets/characters/michael-sprite.webp",
+      "bytes": 1396924,
+      "sha256": "04b6844ca9f88e7db9ea19eb5c31822271bd0f936eb5f9e4b86b27ebf3d24283"
+    },
+    {
+      "path": "game/assets/characters/mithra-motion.webp",
+      "bytes": 638382,
+      "sha256": "6fd862e97c37d162cb1cfdf7b86f1bcab7b7a11708ce70b93cbe4e0255c42caa"
+    },
+    {
+      "path": "game/assets/characters/mithra-portrait.webp",
+      "bytes": 881438,
+      "sha256": "8c4f65a272e2ceb883f9fd66a334119e9fd88425524b0ceb39ad0068bc771730"
+    },
+    {
+      "path": "game/assets/characters/mithra-sprite.webp",
+      "bytes": 1369902,
+      "sha256": "4254ccdc5fdc26275faa149caa3057bed9515a19e9cf0325ac016f177e10d143"
+    },
+    {
+      "path": "game/assets/characters/morpheus-motion.webp",
+      "bytes": 1133468,
+      "sha256": "48f09d4fddee6cb0aeb21f19232b162f1a30e5d5e20081d8623f08cd9129fb8f"
+    },
+    {
+      "path": "game/assets/characters/morpheus-portrait.webp",
+      "bytes": 714084,
+      "sha256": "808a29c7121e4aaf04285ace45ed4b214dc4eabc61d5168167fdec4e845ac133"
+    },
+    {
+      "path": "game/assets/characters/morpheus-sprite.webp",
+      "bytes": 1276754,
+      "sha256": "aaace8c52918a94464b256d0e47dd9a6eb121e1ff9a4b084c58deb1b04d01bb5"
+    },
+    {
+      "path": "game/assets/characters/nuwa-motion.webp",
+      "bytes": 1596978,
+      "sha256": "6da07ef6b67c012c4572bc318e1e1ec321c4204921623601c89b195f27118fc5"
+    },
+    {
+      "path": "game/assets/characters/nuwa-portrait.webp",
+      "bytes": 1305378,
+      "sha256": "0c6e82c42e8d17705fa8a5a8f4aa89dffd4a4039924a55ca1a71988199966b60"
+    },
+    {
+      "path": "game/assets/characters/nuwa-sprite.webp",
+      "bytes": 1689552,
+      "sha256": "1c992aec9994721c9d3bcf7ae54516e95f2b6c4b4e7ecce13b611495996f0d63"
+    },
+    {
+      "path": "game/assets/characters/odin-motion.webp",
+      "bytes": 579962,
+      "sha256": "7c70d948f75de98f3caa2eb79766091184d2ab2a8f824f408608046c2e9ef046"
+    },
+    {
+      "path": "game/assets/characters/odin-portrait.webp",
+      "bytes": 1007816,
+      "sha256": "6bc2bf2ef8e3946b5edd07b0b1486b00ff65f49c1794822f85937b7d79258511"
+    },
+    {
+      "path": "game/assets/characters/odin-sprite.webp",
+      "bytes": 1227076,
+      "sha256": "b4136859c7ed39018c6e7d4563005db6de7797bcbb6b49116a92cd4ad9044493"
+    },
+    {
+      "path": "game/assets/characters/poseidon-motion.webp",
+      "bytes": 749172,
+      "sha256": "27d0b7c92646a814d39807be5fd44aef69114f7798d7d141379fe958240975e8"
+    },
+    {
+      "path": "game/assets/characters/poseidon-portrait.webp",
+      "bytes": 937922,
+      "sha256": "0e53e6575d49a207e6882c4500768abc162985ad4e298c68197c3b4d5603d73f"
+    },
+    {
+      "path": "game/assets/characters/poseidon-sprite.webp",
+      "bytes": 1447620,
+      "sha256": "7e0661dddffd75f8a8e141b0e6337ab531ae16b0a4111928445c1722ec910c61"
+    },
+    {
+      "path": "game/assets/characters/quetzalcoatl-motion.webp",
+      "bytes": 745736,
+      "sha256": "c6540bb411c22ff9869121538602244e12c7592bdf7581d2b7f626bb53b25d8d"
+    },
+    {
+      "path": "game/assets/characters/quetzalcoatl-portrait.webp",
+      "bytes": 834120,
+      "sha256": "3edb7dc8853321b72067df551d81bf3726b2f113366ed8d0aa2d9d6edf74d3eb"
+    },
+    {
+      "path": "game/assets/characters/quetzalcoatl-sprite.webp",
+      "bytes": 1539280,
+      "sha256": "f6d80da839da4f8a0d84dd777905b67419562111baecd65e33eddeaaf13a4e73"
+    },
+    {
+      "path": "game/assets/characters/susanoo-motion.webp",
+      "bytes": 1320962,
+      "sha256": "bc794c26626f5c6a4701021f36ba1cf848dc8ea1c5897b8a746c8902ec797b6b"
+    },
+    {
+      "path": "game/assets/characters/susanoo-portrait.webp",
+      "bytes": 1140690,
+      "sha256": "8653bce2831b7cfe2f59161e7db5e17537f79a0caa4543d27087c21432ad97d1"
+    },
+    {
+      "path": "game/assets/characters/susanoo-sprite.webp",
+      "bytes": 1553952,
+      "sha256": "770f97b7e40f8e0708711f987f73da8593845128ccd87ee3c40d7daa0daa37f5"
+    },
+    {
+      "path": "game/assets/characters/takemikazuchi-motion.webp",
+      "bytes": 1088780,
+      "sha256": "744a6fd731a10d7b01a143de9352cfb59d2d4588adc91cf7eca6db221211fbf1"
+    },
+    {
+      "path": "game/assets/characters/takemikazuchi-portrait.webp",
+      "bytes": 902272,
+      "sha256": "0616da29e8364c7ab2a957e97f1c1d0ac584075a80b346c4f8003544c1c7275d"
+    },
+    {
+      "path": "game/assets/characters/takemikazuchi-sprite.webp",
+      "bytes": 1573766,
+      "sha256": "5bf9525893bc671631abd6f8000358168dc6a77bf4e90a261b6f9f6bfbd1a12a"
+    },
+    {
+      "path": "game/assets/characters/tiamat-motion.webp",
+      "bytes": 1002450,
+      "sha256": "f9961f2e39d4bc47f3b235bb59c2058c191ee0045adada7b393f98d9a72fe14b"
+    },
+    {
+      "path": "game/assets/characters/tiamat-portrait.webp",
+      "bytes": 1110670,
+      "sha256": "51ed3561dafc82c68300e71d88de807dc648e61b73103041bb10077071bd2fc0"
+    },
+    {
+      "path": "game/assets/characters/tiamat-sprite.webp",
+      "bytes": 1978050,
+      "sha256": "86a1456f3b6e8bba49ba871212db7563239e57d01cee11787c01fc6b41cd2ff1"
+    },
+    {
+      "path": "game/assets/characters/tsukuyomi-motion.webp",
+      "bytes": 1099288,
+      "sha256": "568c950474a95f8ab98dd5533762a385fba6bd7608fb90cfa6b6cc923cbc6707"
+    },
+    {
+      "path": "game/assets/characters/tsukuyomi-portrait.webp",
+      "bytes": 1115008,
+      "sha256": "cad904dea8f77373e51eb9f8f2f2af99837fa3cc0e3ba07e157742996c868cf9"
+    },
+    {
+      "path": "game/assets/characters/tsukuyomi-sprite.webp",
+      "bytes": 1198462,
+      "sha256": "6e50b1e9d6352267cccc3676e2fdf7af828f9a1a4ac4418ad6d01f5db81aff46"
+    },
+    {
+      "path": "game/assets/image-manifest.json",
+      "bytes": 41498,
+      "sha256": "e6d9e4539026a4e13f55b6b672ee63c105b8587ef21b807c73a5e63c9aad53c6"
+    },
+    {
+      "path": "game/assets/openings/anubis-opening-v1.png",
+      "bytes": 2293761,
+      "sha256": "ec64809d8d59f8ae1497574844462feaca79f62116f88c1bf31d22f53fc65f1d"
+    },
+    {
+      "path": "game/assets/openings/apollo-opening-v1.png",
+      "bytes": 2460458,
+      "sha256": "c07d83eb628d1c497e686302c327095ba3d94bcf23191d240c797550dbd2fc76"
+    },
+    {
+      "path": "game/assets/openings/bellona-opening-v1.png",
+      "bytes": 2343204,
+      "sha256": "c1fbbc37789d0c812d39ba3a54504197a9a767fbc33a035fa8f0ab3a682ecac6"
+    },
+    {
+      "path": "game/assets/openings/eve-opening-v1.png",
+      "bytes": 2592569,
+      "sha256": "6ecf40ac7e64c8548c299b06e88ee50de49bbee738ced11846feaa1737a9e860"
+    },
+    {
+      "path": "game/assets/openings/fortuna-opening-v1.png",
+      "bytes": 2347426,
+      "sha256": "7285d748ea25450fbf74aee7d0c6feb4c54082d8658182b8975262e02d93306d"
+    },
+    {
+      "path": "game/assets/openings/fuxi-opening-v1.png",
+      "bytes": 2531493,
+      "sha256": "2113a049f2d96dd6eb44046535b484569317540a00a6c770d2d5415477527cf1"
+    },
+    {
+      "path": "game/assets/openings/hecate-opening-v1.png",
+      "bytes": 2282168,
+      "sha256": "926f8432944fe2ccd970dd805f732fa5d40b3d975d8327453a5db760fce40edc"
+    },
+    {
+      "path": "game/assets/openings/hephaestus-opening-v1.png",
+      "bytes": 2006217,
+      "sha256": "ed636f054d1f5b62aabe003b1d69e1381e8a18e875ea0b972c00dfd9ab5100f1"
+    },
+    {
+      "path": "game/assets/openings/hestia-opening-v1.png",
+      "bytes": 2128439,
+      "sha256": "0a3bd75ee3ba3647f414bc2f4af542f20460ed4bda524023e7fd8b0b655cfc92"
+    },
+    {
+      "path": "game/assets/openings/kamui-opening-v1.png",
+      "bytes": 2458713,
+      "sha256": "3ff9be6590f0f3a21928369eb5957a2c40145a7484074f580aab1dd3e46dcaae"
+    },
+    {
+      "path": "game/assets/openings/kronos-opening-v1.png",
+      "bytes": 2111557,
+      "sha256": "403523af6660480af510c8da9e93034c043ef543528e776a819fb42c111e5e2f"
+    },
+    {
+      "path": "game/assets/openings/loki-opening-v1.png",
+      "bytes": 2404543,
+      "sha256": "71f035a42d6a25de43b37bae22bcc2dc67dc021a064aa62ab4960998e1871578"
+    },
+    {
+      "path": "game/assets/openings/lugh-opening-v1.png",
+      "bytes": 2611332,
+      "sha256": "a3fe13a6363d81b75a520fb3697734b23994d005996aad06d8edc732a64b11aa"
+    },
+    {
+      "path": "game/assets/openings/michael-opening-v1.png",
+      "bytes": 2627160,
+      "sha256": "8965fb52d4b8819be201007267fd51c22bc5e01c2ec63d64f52cd140360ed2f1"
+    },
+    {
+      "path": "game/assets/openings/mithra-opening-v1.png",
+      "bytes": 2115870,
+      "sha256": "f069e8aaee949c81cd247aae772e4724a1f9e96e37844307f31ab1ec56ece3bf"
+    },
+    {
+      "path": "game/assets/openings/morpheus-opening-v1.png",
+      "bytes": 2139330,
+      "sha256": "d4691e54d7efb4dbc79df93d80cd5a608ffaec09c8812b4005f86ed8118c6d0f"
+    },
+    {
+      "path": "game/assets/openings/nuwa-opening-v1.png",
+      "bytes": 2297818,
+      "sha256": "4123970060a443c49fec4f9ecde667f73088bb84c401b383eb2ff9353a3b47b6"
+    },
+    {
+      "path": "game/assets/openings/odin-opening-v1.png",
+      "bytes": 2397745,
+      "sha256": "1d6d0be53886b19eb7e97410b8d64f0f739df4826661d64a6ae25308ad80ed0a"
+    },
+    {
+      "path": "game/assets/openings/poseidon-opening-v1.png",
+      "bytes": 2452074,
+      "sha256": "8719d61af6bc7ddcab34f237061782db4ab2bb14913c98f7d4bae038df75cb03"
+    },
+    {
+      "path": "game/assets/openings/quetzalcoatl-opening-v1.png",
+      "bytes": 2480055,
+      "sha256": "4b6156b1f504268bb46cbc710582534da52f21fa7b19d3c8c6268dc5eeecad10"
+    },
+    {
+      "path": "game/assets/openings/susanoo-opening-v1.png",
+      "bytes": 2582273,
+      "sha256": "271c4e302df24fc931964fef9eff85a3242f496400dbd5e60bda54ea9e5666f7"
+    },
+    {
+      "path": "game/assets/openings/takemikazuchi-opening-v1.png",
+      "bytes": 2236553,
+      "sha256": "0ab4a8a68d940c775a6188a29c9b31d4c82690f84fef680efc78e485bb0ef151"
+    },
+    {
+      "path": "game/assets/openings/tiamat-opening-v1.png",
+      "bytes": 2509286,
+      "sha256": "3230ede15f6b7c69e60c4deb110e6037d8d825ee438d8a415772a726c4338768"
+    },
+    {
+      "path": "game/assets/openings/tsukuyomi-opening-v1.png",
+      "bytes": 2358343,
+      "sha256": "b613a221f75e00b980feea03e32c5b071ca7e2ee3de239a1523879b69b8fb8a8"
+    },
+    {
+      "path": "game/assets/sfx/adjust.wav",
+      "bytes": 5336,
+      "sha256": "d44ca42c2ec8bd0614efe987dedd77ffdd3fdf6084c522742dcd13e50d0654ae"
+    },
+    {
+      "path": "game/assets/sfx/arcane-cast.wav",
+      "bytes": 52964,
+      "sha256": "428a5bef56202e0e529bf0bc8109aadc81d2bc7b483fee1658b03adea473e1ea"
+    },
+    {
+      "path": "game/assets/sfx/arcane-finish.wav",
+      "bytes": 98830,
+      "sha256": "9767012ed08ddad9a7b4ec32a41d73f96d4e7c24186a4092d347e9586c21aa8b"
+    },
+    {
+      "path": "game/assets/sfx/arcane-heavy.wav",
+      "bytes": 45908,
+      "sha256": "dadfa77e303bab891d3ee5e5c8d3adf95aef888734a0d73d548fa143f04c4c8e"
+    },
+    {
+      "path": "game/assets/sfx/arcane-light.wav",
+      "bytes": 26504,
+      "sha256": "a2d522b1973f31fe427e84f767d784f1e0dc79c0119006bfd66eea9857378d8c"
+    },
+    {
+      "path": "game/assets/sfx/arcane-super.wav",
+      "bytes": 110294,
+      "sha256": "11e9681661c7695d145b7036f7b98dc1e7d1068339b6e7e30c1e09b6bc2a5720"
+    },
+    {
+      "path": "game/assets/sfx/arcane-swing.wav",
+      "bytes": 22094,
+      "sha256": "4b5da84685a69d6f23224e887c4b19bb645cd6dcc8db840e21139b4af5e59bd6"
+    },
+    {
+      "path": "game/assets/sfx/back.wav",
+      "bytes": 16802,
+      "sha256": "2afa04b54a8743a149f13936db6ead3da30126818b4f2fb18d6256bc7b92ae33"
+    },
+    {
+      "path": "game/assets/sfx/blade-cast.wav",
+      "bytes": 52964,
+      "sha256": "0c46be652ab2a576dc400bfcc86cd116aedcb4e3b0d4facd478263d7f2b13618"
+    },
+    {
+      "path": "game/assets/sfx/blade-finish.wav",
+      "bytes": 98830,
+      "sha256": "b5a4c06a31094f6861f116fea1d2b607c10d1ac860c19a0a489ad7504b0a7a72"
+    },
+    {
+      "path": "game/assets/sfx/blade-heavy.wav",
+      "bytes": 45908,
+      "sha256": "5f604d424df342368fd2dbefdf4259e9ced520c460737bfc23ab9cd4979dd83c"
+    },
+    {
+      "path": "game/assets/sfx/blade-light.wav",
+      "bytes": 26504,
+      "sha256": "af8380058cc108dbf8f4993e5e10a3c040f9a1063082b74be0ea082a16976af8"
+    },
+    {
+      "path": "game/assets/sfx/blade-super.wav",
+      "bytes": 110294,
+      "sha256": "2bf880d363309f5d69dcaa175a59db4d5c2bb2e7113872c012953a0827539ac2"
+    },
+    {
+      "path": "game/assets/sfx/blade-swing.wav",
+      "bytes": 22094,
+      "sha256": "77ecb5d478ef1b25ca4d099c70977e06b107d63ba5672a5a908485c411e6b0d4"
+    },
+    {
+      "path": "game/assets/sfx/block.wav",
+      "bytes": 21212,
+      "sha256": "3db641183c7841e677daab7c5bd67e5d6b0386cdbc0b5856b0aee5b5a5b2996f"
+    },
+    {
+      "path": "game/assets/sfx/chime-cast.wav",
+      "bytes": 52964,
+      "sha256": "b33bc2c609fb8a203d4cf494e6b282dcbbb1b5650f4127534421595544c7ed9b"
+    },
+    {
+      "path": "game/assets/sfx/chime-finish.wav",
+      "bytes": 98830,
+      "sha256": "c4e48814b6583b7ea142ab5859f86335e0c1ace36400349f288d51ad1161a50b"
+    },
+    {
+      "path": "game/assets/sfx/chime-heavy.wav",
+      "bytes": 45908,
+      "sha256": "38058a535915a7feaeca57861c5ec59eafd53bae8dc756fd6529d177d2dbfdb2"
+    },
+    {
+      "path": "game/assets/sfx/chime-light.wav",
+      "bytes": 26504,
+      "sha256": "13c09f67d850fd529b389e5e400dd154b218450fea63529a8a4b661467811b60"
+    },
+    {
+      "path": "game/assets/sfx/chime-super.wav",
+      "bytes": 110294,
+      "sha256": "b597f09737015cd6d3fdfb7caf5c497c3df79e71e80c51062a193c3f87934674"
+    },
+    {
+      "path": "game/assets/sfx/chime-swing.wav",
+      "bytes": 22094,
+      "sha256": "e3a51b6770963f8fa93c32f7561e872928aa383d3cefb91e346286c000fffc6c"
+    },
+    {
+      "path": "game/assets/sfx/clash.wav",
+      "bytes": 33560,
+      "sha256": "4a41b07dcc1c4241c9d11fd567bd330202a6c1aae32452d2dcf71605ad7ca6ff"
+    },
+    {
+      "path": "game/assets/sfx/confirm.wav",
+      "bytes": 23858,
+      "sha256": "14ed8ba79922f1a78300763b7dfade673a08441270d88fdbd1873fc7194256bf"
+    },
+    {
+      "path": "game/assets/sfx/counter.wav",
+      "bytes": 22094,
+      "sha256": "fc72678485ca347eed6dd0416260d9c4790bf72560f33acc426531cc7693b87b"
+    },
+    {
+      "path": "game/assets/sfx/dash.wav",
+      "bytes": 21212,
+      "sha256": "c955b87a332ba613eb82a0a4c726d8a0803d32437cc77d5e19fcd27318f4f22f"
+    },
+    {
+      "path": "game/assets/sfx/earth-cast.wav",
+      "bytes": 52964,
+      "sha256": "6b536592538f5f1f6280bdb4eebe5c39eed34f4d613ba077de9ebd6634ea47de"
+    },
+    {
+      "path": "game/assets/sfx/earth-finish.wav",
+      "bytes": 98830,
+      "sha256": "28b1c26a6e23064cbdb707791e32322107c70f381cb52157173cb312eb8a2582"
+    },
+    {
+      "path": "game/assets/sfx/earth-heavy.wav",
+      "bytes": 45908,
+      "sha256": "72c404576c5db50c4e6098c92f372522c59facf7eb8289d172d86b6a11be4ffc"
+    },
+    {
+      "path": "game/assets/sfx/earth-light.wav",
+      "bytes": 26504,
+      "sha256": "ca289d2dd2d8384424c2c36a730bf7b16fe1aefbcbd206b2769399e16d420b86"
+    },
+    {
+      "path": "game/assets/sfx/earth-super.wav",
+      "bytes": 110294,
+      "sha256": "98bfcc89cf1ea0aa2d2033210d9334720487612ceaff03311171ca982825e2ea"
+    },
+    {
+      "path": "game/assets/sfx/earth-swing.wav",
+      "bytes": 22094,
+      "sha256": "3edafbe942489d31e209c62b10e2704bf74bfb3fb19e1fb169d68c33f0dbdbdb"
+    },
+    {
+      "path": "game/assets/sfx/fight.wav",
+      "bytes": 66194,
+      "sha256": "bcbe94ca8d67636d344b5d35f0067cba38615aa24f4cacdf3ac451858fb394d3"
+    },
+    {
+      "path": "game/assets/sfx/fire-cast.wav",
+      "bytes": 52964,
+      "sha256": "ee62b537af8a9869d65a7107b3b007afecfb05686f54378fbdfb4bd743d6d123"
+    },
+    {
+      "path": "game/assets/sfx/fire-finish.wav",
+      "bytes": 98830,
+      "sha256": "f1872da048f290ebe6ae3ad1ba768a447d1017316c17bc6d73eca865643954d1"
+    },
+    {
+      "path": "game/assets/sfx/fire-heavy.wav",
+      "bytes": 45908,
+      "sha256": "0bb61bf15bbf159229e1ae96330000db64b0241347cef4e11107f8f1a28b59c3"
+    },
+    {
+      "path": "game/assets/sfx/fire-light.wav",
+      "bytes": 26504,
+      "sha256": "cabbd781d5539b2d83b7eaacd60209e8a8ff39cc590ba813c35d90c04bedd5d7"
+    },
+    {
+      "path": "game/assets/sfx/fire-super.wav",
+      "bytes": 110294,
+      "sha256": "7f4c5a004e8e1b876479b99394e6be99f707dc033f03e6d6da28b5aa5664a0af"
+    },
+    {
+      "path": "game/assets/sfx/fire-swing.wav",
+      "bytes": 22094,
+      "sha256": "df7cd435bd26dc32e7a9104902be8e9183b5e19cafc86ac7ec49f58aa13ee326"
+    },
+    {
+      "path": "game/assets/sfx/forge-cast.wav",
+      "bytes": 52964,
+      "sha256": "aad55be78aec1c0fb0fbf38083dbb32a1a2b8add2287cfe91d6430abfa8e8f6d"
+    },
+    {
+      "path": "game/assets/sfx/forge-finish.wav",
+      "bytes": 98830,
+      "sha256": "95dbfa7ac6db4f569efb56cb5e82a1fb5686a24169988b73bd1cf73fb348cdb6"
+    },
+    {
+      "path": "game/assets/sfx/forge-heavy.wav",
+      "bytes": 45908,
+      "sha256": "92b4f553814e3ae60880a2bcd5bd15d6b2728f6688f4a532b04978d6062a625a"
+    },
+    {
+      "path": "game/assets/sfx/forge-light.wav",
+      "bytes": 26504,
+      "sha256": "a40434f457dacb900d4b85b998b2c1384ecead0b3fc1fbbc725e23325c67e037"
+    },
+    {
+      "path": "game/assets/sfx/forge-super.wav",
+      "bytes": 110294,
+      "sha256": "9c69e5ff67fd5b6c4174e8f72a7ee72ffc2803429813182162d905b5d5e9a3f8"
+    },
+    {
+      "path": "game/assets/sfx/forge-swing.wav",
+      "bytes": 22094,
+      "sha256": "7bc5beb41068f2c714c7b2d7ae7b3286e0907658c05c36a4cfa672a753fdcacf"
+    },
+    {
+      "path": "game/assets/sfx/jump.wav",
+      "bytes": 15920,
+      "sha256": "6375b880980c7c52b73dd817fc518291f8dab3ba2214697304486f6dad050f6e"
+    },
+    {
+      "path": "game/assets/sfx/ko.wav",
+      "bytes": 110294,
+      "sha256": "7c6a970f079a488f62c7824bf345701e8306dd80d757420a95f547bb7da051e4"
+    },
+    {
+      "path": "game/assets/sfx/nature-cast.wav",
+      "bytes": 52964,
+      "sha256": "e934f1bbbc46cda3aa9fb282006108cebef6d4157d219d8c114641ab0d8dbd01"
+    },
+    {
+      "path": "game/assets/sfx/nature-finish.wav",
+      "bytes": 98830,
+      "sha256": "49cb59bd8d7988340cbc63c970360f83ecb32984b78c3b50d5fcf308a3a5ffab"
+    },
+    {
+      "path": "game/assets/sfx/nature-heavy.wav",
+      "bytes": 45908,
+      "sha256": "466672d47686f8ad0f2b5dd153916bc8d3a58c84db3707b0fab1ba312a1c663c"
+    },
+    {
+      "path": "game/assets/sfx/nature-light.wav",
+      "bytes": 26504,
+      "sha256": "1244350ad54d7418592ea7a82a94f84a3178331d4154cddd290d4d378f0f8d3c"
+    },
+    {
+      "path": "game/assets/sfx/nature-super.wav",
+      "bytes": 110294,
+      "sha256": "32d91f7abb78abf80ebca57871fc6db7a5315c4c6ab9623768f6237e8fc30852"
+    },
+    {
+      "path": "game/assets/sfx/nature-swing.wav",
+      "bytes": 22094,
+      "sha256": "57efe2a0499c78270c6d6124ce718dff540191a1680506631a170eab488a73fe"
+    },
+    {
+      "path": "game/assets/sfx/nav.wav",
+      "bytes": 6660,
+      "sha256": "db7a08386889276588e9a5c77c1fbda633848c110f3ccf16f38bc25c6b5f56cb"
+    },
+    {
+      "path": "game/assets/sfx/shadow-cast.wav",
+      "bytes": 52964,
+      "sha256": "45c34589f2f1605dbed0c8d8c558b93796e8e8bda05063c1ef1ad81a6f510bc6"
+    },
+    {
+      "path": "game/assets/sfx/shadow-finish.wav",
+      "bytes": 98830,
+      "sha256": "8180efe7a69d2407daee9268bc3d4a36e8c825a94d301f7a5aa7cdb3330fc972"
+    },
+    {
+      "path": "game/assets/sfx/shadow-heavy.wav",
+      "bytes": 45908,
+      "sha256": "667031142cb75ea0476e36fa3642945c2b4c5b6ed8a7227082cd8809bd6c4586"
+    },
+    {
+      "path": "game/assets/sfx/shadow-light.wav",
+      "bytes": 26504,
+      "sha256": "62dc905156f21b63653d238bc752c3a77f462836ca30b5dc1cff8fdc3307a4d5"
+    },
+    {
+      "path": "game/assets/sfx/shadow-super.wav",
+      "bytes": 110294,
+      "sha256": "5e9d744219b5dcbec207f50969c093e8a5fa240ecfa9cd94fb3f22c5f61db67e"
+    },
+    {
+      "path": "game/assets/sfx/shadow-swing.wav",
+      "bytes": 22094,
+      "sha256": "fb453b111bab63b91170dec69df872855aea082d9aee3d251b383b23d4772a7b"
+    },
+    {
+      "path": "game/assets/sfx/storm-cast.wav",
+      "bytes": 52964,
+      "sha256": "230889e3655f4a6336c64cd877a50633781eaeeae0812accf020dc2e8c15706e"
+    },
+    {
+      "path": "game/assets/sfx/storm-finish.wav",
+      "bytes": 98830,
+      "sha256": "51e91ca14344ba38c757fdb4fbdafc190363fce471e36948e0ce418a7af9c15c"
+    },
+    {
+      "path": "game/assets/sfx/storm-heavy.wav",
+      "bytes": 45908,
+      "sha256": "f4380d79234a06df2ffdb57d7c06f449ff2f76fff2b3b026fdde2e09bd5f3d07"
+    },
+    {
+      "path": "game/assets/sfx/storm-light.wav",
+      "bytes": 26504,
+      "sha256": "48004b8300065292ed1850b1c636e90854637644ec6a6d560b9fae4686fb08fa"
+    },
+    {
+      "path": "game/assets/sfx/storm-super.wav",
+      "bytes": 110294,
+      "sha256": "6b00c78a47c94ae856db1dd1f1d5431f9d2c1a25d9276ec6439ccf3190dc3c19"
+    },
+    {
+      "path": "game/assets/sfx/storm-swing.wav",
+      "bytes": 22094,
+      "sha256": "258c3fd0a061759a4387979e3965533e23b47cc197f477a33e722cdc8e88fe29"
+    },
+    {
+      "path": "game/assets/sfx/trick-cast.wav",
+      "bytes": 52964,
+      "sha256": "4dd503966e03b45de35ddd7ea9f09426ae044e3c80468641c788a192081337cd"
+    },
+    {
+      "path": "game/assets/sfx/trick-finish.wav",
+      "bytes": 98830,
+      "sha256": "c016ca9534344b66c32469da7b9b8a1398c4f1603edd92f66ee15995385cc75f"
+    },
+    {
+      "path": "game/assets/sfx/trick-heavy.wav",
+      "bytes": 45908,
+      "sha256": "8ee1af72c7b77debabc2f05550bb4ccf190b2f1d4c809fa9973a5bef1ed7aaf1"
+    },
+    {
+      "path": "game/assets/sfx/trick-light.wav",
+      "bytes": 26504,
+      "sha256": "61e35fc889dd02ed5bd0973dd5b9f061e463d1aead8b3eaf5ae9ccba425d0e88"
+    },
+    {
+      "path": "game/assets/sfx/trick-super.wav",
+      "bytes": 110294,
+      "sha256": "6f92a8e712eb13410ec933770281de8921d4c9211e8dbe9d7b28352b29f5b7a9"
+    },
+    {
+      "path": "game/assets/sfx/trick-swing.wav",
+      "bytes": 22094,
+      "sha256": "96c1fd4a0ed34bac88806fec31283fbc0b77532fbf2bc2dbe31526f3c8941ef4"
+    },
+    {
+      "path": "game/assets/sfx/water-cast.wav",
+      "bytes": 52964,
+      "sha256": "166bbe61be2a29e139e1d8ec9a1c9724fb06b240b5cf4157381129cfc932a1d0"
+    },
+    {
+      "path": "game/assets/sfx/water-finish.wav",
+      "bytes": 98830,
+      "sha256": "031b4d56d329c386fcfde28f6d0a683774534687f326739639f21387f7ca6e6d"
+    },
+    {
+      "path": "game/assets/sfx/water-heavy.wav",
+      "bytes": 45908,
+      "sha256": "c696f0d23b1bac687575f21a540d9fc81c27e7314423aebbeb47cd8616ddac15"
+    },
+    {
+      "path": "game/assets/sfx/water-light.wav",
+      "bytes": 26504,
+      "sha256": "095bbc7a9f766ca3ad50bd3eceef2aaefe3c212299a8f92514f98f849ca544ce"
+    },
+    {
+      "path": "game/assets/sfx/water-super.wav",
+      "bytes": 110294,
+      "sha256": "eb5bd255271f680480a5fc7dcdc1742cd5b63ad43844ad94c0dd11a7c505e7e0"
+    },
+    {
+      "path": "game/assets/sfx/water-swing.wav",
+      "bytes": 22094,
+      "sha256": "f7e4a4cf421f2f75fefaec70c5522cde1c09c555bdbafc98b4d1ff52f7fd79c7"
+    },
+    {
+      "path": "game/assets/sfx/wind-cast.wav",
+      "bytes": 52964,
+      "sha256": "d5eaa839a56bb1bf85382022cc9e9e23d4cdfd0e262859e43e2fb4cc3483d889"
+    },
+    {
+      "path": "game/assets/sfx/wind-finish.wav",
+      "bytes": 98830,
+      "sha256": "f87845a80aeb852a14a766e63f435aae2e175c2e3f299f7baedc5a18c19c471c"
+    },
+    {
+      "path": "game/assets/sfx/wind-heavy.wav",
+      "bytes": 45908,
+      "sha256": "94ef2297f313c66edceac110ab2b1f00258e31d4f80fdb2fd50b7803944b3cfc"
+    },
+    {
+      "path": "game/assets/sfx/wind-light.wav",
+      "bytes": 26504,
+      "sha256": "50ad99f86a96b088a959bd7ad3eeeb9e832e174699f0c89759d64a7722060a98"
+    },
+    {
+      "path": "game/assets/sfx/wind-super.wav",
+      "bytes": 110294,
+      "sha256": "1ece1a1655e9002ed5811beaa53e95ecb91baaa3900b4b09f6f026ea7caae200"
+    },
+    {
+      "path": "game/assets/sfx/wind-swing.wav",
+      "bytes": 22094,
+      "sha256": "50133e96a0215d12e798358b349dedd09cdf325ee205fa430f9a2e8a00535646"
+    },
+    {
+      "path": "game/assets/stages/apollo-stage-v1.webp",
+      "bytes": 1767868,
+      "sha256": "6ea9ee95e6a922c91e563cfacac784653639d54e62c0dfe0d655b88ff9dfc8a5"
+    },
+    {
+      "path": "game/assets/stages/bellona-stage-v1.webp",
+      "bytes": 1608416,
+      "sha256": "b3f1815c4e5290edf492dfd5ba885e0d09f2a7fca3b7642a3b5f3bb0bf91827b"
+    },
+    {
+      "path": "game/assets/stages/eve-stage-v1.webp",
+      "bytes": 1837230,
+      "sha256": "04ee3c27c2957fe937d9889907c72ad8c634a395ca43485aacd77fbfa72e2731"
+    },
+    {
+      "path": "game/assets/stages/fortuna-stage-v1.webp",
+      "bytes": 1762564,
+      "sha256": "6d8128f4c7fa1da1c567f28cb352d5b4aa2133d2a1819d9e66a33afb604bfbc6"
+    },
+    {
+      "path": "game/assets/stages/fuxi-stage-v1.webp",
+      "bytes": 1394232,
+      "sha256": "d2cdc99b06e6e371cab5b9525d1ff9a2f146548bf7a4c713290fe0a11dafce05"
+    },
+    {
+      "path": "game/assets/stages/hecate-stage-v1.webp",
+      "bytes": 1661020,
+      "sha256": "1ddb9601cfe5fdf6efc8e32e558515c5a5c7e0c023e320cba643f4b34c2469e9"
+    },
+    {
+      "path": "game/assets/stages/hephaestus-stage-v1.webp",
+      "bytes": 1538040,
+      "sha256": "b3ab9f64539ca77712c6d9f4992fa24eb397bc533047b7630379ef69b0261af4"
+    },
+    {
+      "path": "game/assets/stages/hestia-stage-v1.webp",
+      "bytes": 1606864,
+      "sha256": "1de9b0b06bea1eaec710ec4ab786de59abdd8cdf1e8e148ae3eb6d35086fdc7c"
+    },
+    {
+      "path": "game/assets/stages/kamui-stage-v1.webp",
+      "bytes": 1863272,
+      "sha256": "135e15c4cf98475c4bc602b52ecdb043259136cebb7a2c2fdce608e71afb267e"
+    },
+    {
+      "path": "game/assets/stages/kronos-stage-v1.webp",
+      "bytes": 1547812,
+      "sha256": "d876b3e0d5e7c442a39b00ecc3fb636bf91e7e894fba3213b97ec23b1756fdde"
+    },
+    {
+      "path": "game/assets/stages/loki-stage-v1.webp",
+      "bytes": 1515608,
+      "sha256": "81cdf791945ef95c9007e90f8fc67bf5ee2f83433613d3c9aab9ef9d3891c9e5"
+    },
+    {
+      "path": "game/assets/stages/lugh-stage-v1.webp",
+      "bytes": 1777806,
+      "sha256": "d67b46eb0ab3c601a8deba961d6d4df471d4055bd7035f1e6d7558f50b39fe57"
+    },
+    {
+      "path": "game/assets/stages/michael-stage-v1.webp",
+      "bytes": 1558530,
+      "sha256": "21a63d2afdcaa22b57125993f231169160c4a1042b865d01381080e031c8125b"
+    },
+    {
+      "path": "game/assets/stages/mithra-stage-v1.webp",
+      "bytes": 1587114,
+      "sha256": "b76e51c30c497f0969308e3aa83a6b5298d92cde446e17671490d2320d871785"
+    },
+    {
+      "path": "game/assets/stages/morpheus-stage-v1.webp",
+      "bytes": 1470640,
+      "sha256": "10a16a4c376bd996a6befab2cc1587dd335e7ec273ce7f142f87c5933de96037"
+    },
+    {
+      "path": "game/assets/stages/nuwa-stage-v1.webp",
+      "bytes": 1427138,
+      "sha256": "35a0c9b1b06aaa1ba525274269465058e328a43147c6180e177f7af120de41c9"
+    },
+    {
+      "path": "game/assets/stages/odin-stage-v1.webp",
+      "bytes": 1556988,
+      "sha256": "4c9843b5f88692f702af908bf4ac69f29543feaf6b30049533d5db3db46a725e"
+    },
+    {
+      "path": "game/assets/stages/poseidon-stage-v1.webp",
+      "bytes": 1489846,
+      "sha256": "1c96821b1da0adacd32b56c518fa338f1b47d4250cb4517648b0cbf304e8b34d"
+    },
+    {
+      "path": "game/assets/stages/quetzalcoatl-stage-v1.webp",
+      "bytes": 1736266,
+      "sha256": "f971c984354c0bddcb947cc7b135e00cc8dc5d4ac3968a1445e2f29fe60a1e42"
+    },
+    {
+      "path": "game/assets/stages/takemikazuchi-stage-v1.webp",
+      "bytes": 1600198,
+      "sha256": "49ac1b6af5a45c67834c058dbd81c103d9b827b023c902019d64c0ab208d2b02"
+    },
+    {
+      "path": "game/assets/stages/tiamat-stage-v1.webp",
+      "bytes": 1619620,
+      "sha256": "ac8c869501d7aa444bfcd4530bc02d1149ed17dc2064215e53386b1a83c3c4af"
+    },
+    {
+      "path": "game/assets/stages/tsukuyomi-stage-v1.webp",
+      "bytes": 1249008,
+      "sha256": "f1867aae67a992084e2d658520a05d3f8601efde45a59aa5cfa118e69711b7cb"
+    },
+    {
+      "path": "game/characters.css",
+      "bytes": 7155,
+      "sha256": "1ca9c46135d841442bd1fe00dac4b7db47a4040f1d9392126709855aa07099f2"
+    },
+    {
+      "path": "game/combat-balance.mjs",
+      "bytes": 6126,
+      "sha256": "755baee4fee914a926b9cd40bd3f23f997f0fdd71ed147527ccbc95c7cafefe2"
+    },
+    {
+      "path": "game/desktop.css",
+      "bytes": 16324,
+      "sha256": "9dbb41b1052beff216742e2062a338e9c08214968ae4a81357c3a17127606c96"
+    },
+    {
+      "path": "game/engine.mjs",
+      "bytes": 18477,
+      "sha256": "41baa8719593570cd0a87ad46820c687ce8169a0ac7a0f32ad5d8326bc9387ba"
+    },
+    {
+      "path": "game/features.css",
+      "bytes": 17454,
+      "sha256": "d398eff16b1dceaa21e2055543706548e8b21cd722da4c1514a6baf6cc79f06d"
+    },
+    {
+      "path": "game/gamepad-ui.mjs",
+      "bytes": 6594,
+      "sha256": "06b348cda8b995e229b9fd5837f1b515567035e4c0c838505d7a92eda8a0ab52"
+    },
+    {
+      "path": "game/gamepads.mjs",
+      "bytes": 6219,
+      "sha256": "7aa9e4978f3d372a5a46fd6ea2e8fa35851ecb91bd694c6e2c6e65d28e8921b3"
+    },
+    {
+      "path": "game/index.html",
+      "bytes": 29189,
+      "sha256": "f57d02a2dbf23c593c146371e490b926a4e9b1f435079a6a8b74abcfc905dc15"
+    },
+    {
+      "path": "game/menu-keys.mjs",
+      "bytes": 556,
+      "sha256": "1a3da9d7e7bbdc5c110e9973cdb455dbce55c85241fb37fe8cb53aa67bc31ef9"
+    },
+    {
+      "path": "game/menu-sfx.mjs",
+      "bytes": 1762,
+      "sha256": "b24d056a0aec1be1acbe22d9291bae2e67f01b7550b08d3012984d004d2b1139"
+    },
+    {
+      "path": "game/meter.mjs",
+      "bytes": 339,
+      "sha256": "77582fe1ca75cb7a6251550417a385910ebd37e3f0b6b592fd7503cadd2d4719"
+    },
+    {
+      "path": "game/motion-data.mjs",
+      "bytes": 16791,
+      "sha256": "616f380dfa5fd04fc7e4b313b79960af46947168d2bbe3f5685af0af60bba9ce"
+    },
+    {
+      "path": "game/motion.mjs",
+      "bytes": 6325,
+      "sha256": "075e1e67635803375f3291d08aa7553cfd58b8b3b7c79282e8bfc344b279ce35"
+    },
+    {
+      "path": "game/music.mjs",
+      "bytes": 8465,
+      "sha256": "aaef4b3dbd4d71f26d26bd3405a070de54be86d766467d80affd3f44ccd5631b"
+    },
+    {
+      "path": "game/navigation.mjs",
+      "bytes": 938,
+      "sha256": "b7120fbb5fb52d77e84fbbb70cdb9e03a0481f7f2369eaf12ffa33781edbadbb"
+    },
+    {
+      "path": "game/netcode.mjs",
+      "bytes": 4696,
+      "sha256": "7780a4683fcef558e7071b817d27d5ce1b574abb8e6e0015e4a5e1e22e6fa0b8"
+    },
+    {
+      "path": "game/online.css",
+      "bytes": 2820,
+      "sha256": "6a4bcbf69437eeaee1d4e07a26bed502d43720e91adca15c2d12f4335f6cc902"
+    },
+    {
+      "path": "game/online.mjs",
+      "bytes": 7753,
+      "sha256": "3c9ae28e3084acdbbf4e51f9c76ab66ef87c5f7b52a88d513bd1518eb9d75213"
+    },
+    {
+      "path": "game/opening.mjs",
+      "bytes": 2397,
+      "sha256": "8065540691688893ebd4a43721ecd9a99061e084e3fd2e0222f0c2bd0c190089"
+    },
+    {
+      "path": "game/preferences.mjs",
+      "bytes": 3762,
+      "sha256": "f8d2d28c01f518e4edbf0ad048bf9eda5d8caf334582f1fc4c2d6e2db26a786b"
+    },
+    {
+      "path": "game/progression.mjs",
+      "bytes": 1800,
+      "sha256": "5c43e46822160045d1afc90f368f37e74c80d210d5d7e2d50766278cef61ccfc"
+    },
+    {
+      "path": "game/render.mjs",
+      "bytes": 14564,
+      "sha256": "1e68ea7f43117df483fe44aa40bb17b992082827aa424430bc6d443a55e948fe"
+    },
+    {
+      "path": "game/room-code-input.mjs",
+      "bytes": 2395,
+      "sha256": "9737f1fc7e3e84254089e7fd4302e1b876102c1b26d68e6dfb6044148eed9260"
+    },
+    {
+      "path": "game/roster.mjs",
+      "bytes": 41188,
+      "sha256": "aaeafe4501bcf7bc14465c1cb17a0a3586203fd8799f7d2bb4f71c50fcdcc6c9"
+    },
+    {
+      "path": "game/selection-background.mjs",
+      "bytes": 1435,
+      "sha256": "e0adb8763261fc233437d8266c8dfb89e90a4524495af41959130300705ba6f8"
+    },
+    {
+      "path": "game/sfx-bank.mjs",
+      "bytes": 2205,
+      "sha256": "2e0512031f7139653ab842e821bf82d05fafe7acda6acbe8bee204c815ad5e1a"
+    },
+    {
+      "path": "game/sfx.mjs",
+      "bytes": 4649,
+      "sha256": "18622e9290046d61a5dceaf4c9b5fcb3c32583fc6485c237c026ac73ed515cb7"
+    },
+    {
+      "path": "game/shell.mjs",
+      "bytes": 12271,
+      "sha256": "3c065abe94dae44bfc1cd9afedfe09efa4a8354fd51e6893e4784302dca9e73e"
+    },
+    {
+      "path": "game/sprite-data.mjs",
+      "bytes": 34424,
+      "sha256": "dbcc3476b7e144ef210762bf2e7e66348b58fcf98e8c4a1f10200671c3ad34f9"
+    },
+    {
+      "path": "game/stages.mjs",
+      "bytes": 5851,
+      "sha256": "024b2e4c6bc5da7173abb7e025ad5926311c2ac1cf49d767f22f9438c657acc1"
+    },
+    {
+      "path": "game/story-pairs.mjs",
+      "bytes": 650541,
+      "sha256": "503b8ea704a57520dda56ad8e1ab5575cb7fbf0aa9ed7b2e602644f5fe7d493d"
+    },
+    {
+      "path": "game/story.mjs",
+      "bytes": 16559,
+      "sha256": "7551201ae0d3b768cf84453b9791052369cabbe613d4787dcf5fe7f240f319dd"
+    },
+    {
+      "path": "game/style.css",
+      "bytes": 20191,
+      "sha256": "18d08482e34fe2fb94a7a794bb2b5f7cdd696b0b473a63a10f462a238a82d260"
+    },
+    {
+      "path": "game/super-presentation.mjs",
+      "bytes": 13635,
+      "sha256": "90dec6c7a138ebf9428d2010309e495bfd77b4745523c66f76598e4ea97c1814"
+    },
+    {
+      "path": "game/technique-fx.mjs",
+      "bytes": 4642,
+      "sha256": "d067dd4a74433460588de64e07370554c831cb35a51c66ffc852f78a5a1545b1"
+    },
+    {
+      "path": "game/tutorial.mjs",
+      "bytes": 3145,
+      "sha256": "2406072d47827bd2811284775bc437d35aa70a6807843af7d8199c61c5a6aab6"
+    },
+    {
+      "path": "game/update-ui.mjs",
+      "bytes": 2444,
+      "sha256": "eddd664e8b5f4c4f1bd7fedb87606c9351e5902f763dd32641465420d938c6a9"
+    },
+    {
+      "path": "game/victory.mjs",
+      "bytes": 6168,
+      "sha256": "d14502c507ee05f2c59c93b8e80ae6fb069f056cec2a0db3bbd20d11c7d61fb5"
+    },
+    {
+      "path": "icon.ico",
+      "bytes": 97646,
+      "sha256": "e84b7127b0e3a24cc4d520cb84a8963f93454c17188ac08c4772a2c68d399257"
+    },
+    {
+      "path": "はじめに.txt",
+      "bytes": 24147,
+      "sha256": "99414193c5574a50037abb4ea56dbe8449e7028dc062588ace308710d69df6be"
+    },
+    {
+      "path": "配布ファイル一覧.json",
+      "bytes": 50772,
+      "sha256": "7bb6adced79a502c5b78ea820815177de5b562e2d9fbabe89d59bbeca4f04b2d"
+    }
+  ]
+}
