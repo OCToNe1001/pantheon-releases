@@ -1,13 +1,15 @@
 {
   "schema": 1,
-  "build": 50001,
-  "version": "0.5.0-beta.1",
+  "build": 50002,
+  "version": "0.5.0-beta.2",
   "notes": [
-    "ランダムマッチと検索キャンセルを追加",
-    "ゲーム内アップデートを追加",
-    "キャラ選択からの解放に対応したWindowsベータ版"
+    "ランダム成立時に両者のキャラ・プレイヤー名を斜めVS演出で公開し、自動で対戦開始。再戦ではキャラ変更・準備完了に対応。",
+    "プロフィール名と24種のアイコン、サーバー側の名前チェックを追加。",
+    "武器を使う攻撃モーションと神ごとの戦闘エフェクト、マッチングSEを強化。",
+    "未解放キャラも技を実演できるキャラ資料を追加。",
+    "余った神貨で贈り物を購入。好感度10段階と24人×10章の個別ストーリーを追加。"
   ],
-  "objectsBaseUrl": "https://github.com/OCToNe1001/pantheon-releases/releases/download/v0.5.0-beta.1",
+  "objectsBaseUrl": "https://github.com/OCToNe1001/pantheon-releases/releases/download/v0.5.0-beta.2",
   "files": [
     {
       "path": "Microsoft.Web.WebView2.Core.dll",
@@ -22,12 +24,12 @@
     {
       "path": "PANTHEON.Updater.exe",
       "bytes": 123904,
-      "sha256": "e047cff3ddba85198e1ec3dd638baba8b5aff516469966b7507832408823f6aa"
+      "sha256": "c850f69e67a3671a929665504339e7a901fd7053bed97b1d271188593a630c54"
     },
     {
       "path": "PANTHEON.exe",
       "bytes": 148480,
-      "sha256": "41774af12159b3b04cb5536722ca7e0f35b4f2fd27c3e6c64481ddeda96d02c5"
+      "sha256": "c95f9973f1bc1149e3312e049c3f856f660c9f87e7d719ce1bdada23dd2dcb4c"
     },
     {
       "path": "PANTHEON.exe.config",
@@ -52,12 +54,22 @@
     {
       "path": "bridge.js",
       "bytes": 1497,
-      "sha256": "58a03b89899c147c54a0f93aa869f5c947b5db4442f5436b19465fe6064e75b9"
+      "sha256": "b8fe23d47c6cf550f1115f19e223e0beb11766010bca6b5356d4daaf237fdc5d"
+    },
+    {
+      "path": "game/affinity-chapters.mjs",
+      "bytes": 50030,
+      "sha256": "5726fc58a94f9db3573a37d523eacce1071b26c164785480b89400a86fc26c69"
+    },
+    {
+      "path": "game/affinity.mjs",
+      "bytes": 14729,
+      "sha256": "4ed0fe8bff5962733da8c1cd54becc0787e06dfa76a13a1c2b5dc5887bb982ff"
     },
     {
       "path": "game/app.mjs",
-      "bytes": 53015,
-      "sha256": "4e510ed8588445d8ce115659e7943affe2763e38d2cdeae7f213a5e4b926971b"
+      "bytes": 56341,
+      "sha256": "918f43dd2d935a4d9566c45c28fcf14eea96caf1e8c52fd1f63049b5eea7621a"
     },
     {
       "path": "game/arcade.mjs",
@@ -66,8 +78,8 @@
     },
     {
       "path": "game/art.mjs",
-      "bytes": 5993,
-      "sha256": "38da72e24511e10a0fb084c8c93c756d6e5e6550d2fdf96e51cd8b63b823f7ea"
+      "bytes": 6275,
+      "sha256": "7b0b5bfdb9e1798ed251d4b4f3bc28c250a0fe0f523ae6aee80acff88f02d6e8"
     },
     {
       "path": "game/assets/audio/anubis-meikai-no-tenbin.mp3",
@@ -270,6 +282,11 @@
       "sha256": "34e03df5ac4b6d9ca714db1ce90d44754e9b0d1fe1a1d3e33e1cab926090778e"
     },
     {
+      "path": "game/assets/characters/bellona-weapon-motion.png",
+      "bytes": 1167397,
+      "sha256": "e6d93fddd7f59ef3427d3497e09e2dbea715b104466fdc124a84e7c9bffa1de1"
+    },
+    {
       "path": "game/assets/characters/eve-motion.webp",
       "bytes": 1125134,
       "sha256": "617360cb4763f3c8c9a861f0c10f4646f953131776987a2c4eba2fd887804a9c"
@@ -328,6 +345,11 @@
       "path": "game/assets/characters/hecate-sprite.webp",
       "bytes": 1260638,
       "sha256": "0b2565decfa40099c8e44b027176006893591e9fbdbfdf8393fdb411b0ea6dc3"
+    },
+    {
+      "path": "game/assets/characters/hecate-weapon-motion.png",
+      "bytes": 1920210,
+      "sha256": "c539e2bb9f435b3aebd6cdf94026522ced8f6cc9635b9cdea5999d0b282caf5a"
     },
     {
       "path": "game/assets/characters/hephaestus-motion.webp",
@@ -568,6 +590,11 @@
       "path": "game/assets/characters/takemikazuchi-sprite.webp",
       "bytes": 1573766,
       "sha256": "5bf9525893bc671631abd6f8000358168dc6a77bf4e90a261b6f9f6bfbd1a12a"
+    },
+    {
+      "path": "game/assets/characters/takemikazuchi-weapon-motion.png",
+      "bytes": 1309240,
+      "sha256": "27785e0ba9522243fc67f6af595dca0204c7ebb7d9f4285b155b3f8ceaa67ce5"
     },
     {
       "path": "game/assets/characters/tiamat-motion.webp",
@@ -955,6 +982,11 @@
       "sha256": "7c6a970f079a488f62c7824bf345701e8306dd80d757420a95f547bb7da051e4"
     },
     {
+      "path": "game/assets/sfx/match-found.wav",
+      "bytes": 167624,
+      "sha256": "c4e2fa6aa041ec3ce3b5c5f996d1a1a4b72267a15e479bfc2e213999c1e11cb5"
+    },
+    {
       "path": "game/assets/sfx/nature-cast.wav",
       "bytes": 52964,
       "sha256": "e934f1bbbc46cda3aa9fb282006108cebef6d4157d219d8c114641ab0d8dbd01"
@@ -1256,13 +1288,28 @@
     },
     {
       "path": "game/combat-balance.mjs",
-      "bytes": 6126,
-      "sha256": "755baee4fee914a926b9cd40bd3f23f997f0fdd71ed147527ccbc95c7cafefe2"
+      "bytes": 6142,
+      "sha256": "5317607ad2d3fc9749b6107ad9bc02a03bdfe370c51a931cb7ac0c4e557a260f"
+    },
+    {
+      "path": "game/combat-effects.mjs",
+      "bytes": 2812,
+      "sha256": "643bdd37ff0b714c65f2fe37254db715379102f1a104a3f829f0208af4df6b94"
     },
     {
       "path": "game/desktop.css",
-      "bytes": 16324,
-      "sha256": "9dbb41b1052beff216742e2062a338e9c08214968ae4a81357c3a17127606c96"
+      "bytes": 18277,
+      "sha256": "4270247315dcfe9238b69f125d5f62bcb2300d99f19672b25ff7883c16e7063b"
+    },
+    {
+      "path": "game/dossier.css",
+      "bytes": 3781,
+      "sha256": "666f080dc3e2c9e9026ac9837cc6b627184518f8b997df528bdf0b1755512367"
+    },
+    {
+      "path": "game/dossier.mjs",
+      "bytes": 13447,
+      "sha256": "6c3f8f9e957410275b5f1c8c4fe34a5f4490a32cdd562179325845978d12f6d7"
     },
     {
       "path": "game/engine.mjs",
@@ -1286,8 +1333,18 @@
     },
     {
       "path": "game/index.html",
-      "bytes": 29189,
-      "sha256": "f57d02a2dbf23c593c146371e490b926a4e9b1f435079a6a8b74abcfc905dc15"
+      "bytes": 30523,
+      "sha256": "4ac7af8957b1aa314ede75e26ff90614e4d16dc9ee8d0a85deff89f4eb5f3cb7"
+    },
+    {
+      "path": "game/match-found.css",
+      "bytes": 4590,
+      "sha256": "d99e98b8e82c4f87c278ca25f34872017756830b74d0993dede2941034fd16a8"
+    },
+    {
+      "path": "game/match-found.mjs",
+      "bytes": 2867,
+      "sha256": "1c6582f22d7516dc32d293f9c859df555a414544b4084e73b7c6b10e91c11cf2"
     },
     {
       "path": "game/menu-keys.mjs",
@@ -1311,8 +1368,8 @@
     },
     {
       "path": "game/motion.mjs",
-      "bytes": 6325,
-      "sha256": "075e1e67635803375f3291d08aa7553cfd58b8b3b7c79282e8bfc344b279ce35"
+      "bytes": 6345,
+      "sha256": "cd03f7652250ca6d2935fc09ae116ad83abc6cb48d9faf336d9ab96dbcf25a1e"
     },
     {
       "path": "game/music.mjs",
@@ -1336,8 +1393,8 @@
     },
     {
       "path": "game/online.mjs",
-      "bytes": 7753,
-      "sha256": "3c9ae28e3084acdbbf4e51f9c76ab66ef87c5f7b52a88d513bd1518eb9d75213"
+      "bytes": 7827,
+      "sha256": "24a3da166fd8b894a0220fbb37203b7e6e81d22cb92de6d8df2db911f2a27ec3"
     },
     {
       "path": "game/opening.mjs",
@@ -1350,14 +1407,24 @@
       "sha256": "f8d2d28c01f518e4edbf0ad048bf9eda5d8caf334582f1fc4c2d6e2db26a786b"
     },
     {
+      "path": "game/profile-rules.mjs",
+      "bytes": 3618,
+      "sha256": "b9214ad5d9deb3e969eeccac6bc75e0f57e911e301b7bae75af4b5f1e5cea241"
+    },
+    {
+      "path": "game/profile.mjs",
+      "bytes": 2578,
+      "sha256": "50d7e8d840b811c2c99eebbaab24bcf5f8ee2619ae0ae773763ed3cfb7c9cece"
+    },
+    {
       "path": "game/progression.mjs",
-      "bytes": 1800,
-      "sha256": "5c43e46822160045d1afc90f368f37e74c80d210d5d7e2d50766278cef61ccfc"
+      "bytes": 3435,
+      "sha256": "9bc6dea8b7bf3e6299b32517897fa1cc0f818b782096029240b93eeb8ad13cd7"
     },
     {
       "path": "game/render.mjs",
-      "bytes": 14564,
-      "sha256": "1e68ea7f43117df483fe44aa40bb17b992082827aa424430bc6d443a55e948fe"
+      "bytes": 14917,
+      "sha256": "9c56b158b7bd0d899606ec5c49acd998a3dcd2686f25443767b90e5a2693bdeb"
     },
     {
       "path": "game/room-code-input.mjs",
@@ -1376,8 +1443,8 @@
     },
     {
       "path": "game/sfx-bank.mjs",
-      "bytes": 2205,
-      "sha256": "2e0512031f7139653ab842e821bf82d05fafe7acda6acbe8bee204c815ad5e1a"
+      "bytes": 2219,
+      "sha256": "71c6c4acc1fe9546dbe275bfe7beaacca70af3371f179eb3122843e45362ea44"
     },
     {
       "path": "game/sfx.mjs",
@@ -1386,8 +1453,8 @@
     },
     {
       "path": "game/shell.mjs",
-      "bytes": 12271,
-      "sha256": "3c065abe94dae44bfc1cd9afedfe09efa4a8354fd51e6893e4784302dca9e73e"
+      "bytes": 12399,
+      "sha256": "d844d4c52d703a3cb82ccfd886792b02faf40f714ee795dd0afd54a3a8ca4fd5"
     },
     {
       "path": "game/sprite-data.mjs",
@@ -1416,13 +1483,13 @@
     },
     {
       "path": "game/super-presentation.mjs",
-      "bytes": 13635,
-      "sha256": "90dec6c7a138ebf9428d2010309e495bfd77b4745523c66f76598e4ea97c1814"
+      "bytes": 13590,
+      "sha256": "eeaf481cb2dc60d3414e89b0aa8ce36d611844de0fab3c10608fb5e50f84210f"
     },
     {
       "path": "game/technique-fx.mjs",
-      "bytes": 4642,
-      "sha256": "d067dd4a74433460588de64e07370554c831cb35a51c66ffc852f78a5a1545b1"
+      "bytes": 4860,
+      "sha256": "7ed9b3c0ab43865201426071c81eb816422f8a4cb94d2c28bf85c8d2587cdfe4"
     },
     {
       "path": "game/tutorial.mjs",
@@ -1440,19 +1507,29 @@
       "sha256": "d14502c507ee05f2c59c93b8e80ae6fb069f056cec2a0db3bbd20d11c7d61fb5"
     },
     {
+      "path": "game/weapon-motion-data.mjs",
+      "bytes": 2133,
+      "sha256": "0de7c4fd90e1c90eeaccffc1e57ddf0e18b55ba286a838ade7d480105e530894"
+    },
+    {
+      "path": "game/weapon-motion.mjs",
+      "bytes": 627,
+      "sha256": "86bdc5b122a1efbc526fbb87af0e7e92f1c8b580b9e24269906bb89a982988c6"
+    },
+    {
       "path": "icon.ico",
       "bytes": 97646,
       "sha256": "e84b7127b0e3a24cc4d520cb84a8963f93454c17188ac08c4772a2c68d399257"
     },
     {
       "path": "はじめに.txt",
-      "bytes": 24147,
-      "sha256": "99414193c5574a50037abb4ea56dbe8449e7028dc062588ace308710d69df6be"
+      "bytes": 26360,
+      "sha256": "37581a65fea19f8a19e5dcd77732e3ce6c2f4227e9b524d74701a2608cd74373"
     },
     {
       "path": "配布ファイル一覧.json",
-      "bytes": 50772,
-      "sha256": "7bb6adced79a502c5b78ea820815177de5b562e2d9fbabe89d59bbeca4f04b2d"
+      "bytes": 53290,
+      "sha256": "61bce03c97258e06a47f778487c158d1902200454b510c3017d1233b6b035949"
     }
   ]
 }
