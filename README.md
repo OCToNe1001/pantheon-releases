@@ -4,7 +4,7 @@
 
 ## ダウンロード
 
-**[Windows ベータ版 0.5.0-beta.2 をダウンロード（約321 MB）](https://github.com/OCToNe1001/pantheon-releases/releases/download/v0.5.0-beta.2/PANTHEON-Windows-v0.5.0-beta.2.zip)**
+**[Windows ベータ版 0.5.0-beta.3 をダウンロード（約321 MB）](https://github.com/OCToNe1001/pantheon-releases/releases/download/v0.5.0-beta.3/PANTHEON-Windows-v0.5.0-beta.3.zip)**
 
 1. ZIPをダウンロードして、すべて展開します。
 2. 展開したフォルダーの **PANTHEON.exe** を開きます。
@@ -20,6 +20,14 @@ Windows 10 / 11（64ビット）、Microsoft Edge WebView2 Runtime が必要で�
 - トレーニング／チュートリアル
 
 ランダムマッチ成立時には、両者のキャラクターとプレイヤー名をVSカットインで表示して自動で対戦が始まります。再戦では同じ部屋でキャラクターを変更し、双方の準備完了で開始します。
+
+## beta.3 の更新
+
+両者のCPU難易度が違うとオンライン対戦の開始約2秒後に同期ズレで中断する不具合を修正しました。対戦する両者とも最新版へ更新してください。1人用の難易度設定やセーブデータは引き継がれます。
+
+全24人の弱・強・下段・対空モーション、方向指定の投げ、キャラ固有の移動・攻撃・状態異常を追加。カムイの接近アーマー、ルーの連続突きと空中強襲、クロノスの時間停止、ツクヨミの月相・見切り、ヘカテの冥火設置などを実装しました。
+
+[詳しい操作・変更数値を見る](https://github.com/OCToNe1001/pantheon-releases/releases/tag/v0.5.0-beta.3)
 
 ## beta.2 の追加機能
 
