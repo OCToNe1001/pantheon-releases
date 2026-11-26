@@ -4,7 +4,7 @@
 
 ## ダウンロード
 
-**[Windows ベータ版 0.5.0-beta.7 をダウンロード（約418 MB）](https://github.com/OCToNe1001/pantheon-releases/releases/download/v0.5.0-beta.7/PANTHEON-Windows-v0.5.0-beta.7.zip)**
+**[Windows ベータ版 0.5.0-beta.8 をダウンロード（約418 MB）](https://github.com/OCToNe1001/pantheon-releases/releases/download/v0.5.0-beta.8/PANTHEON-Windows-v0.5.0-beta.8.zip)**
 
 1. ZIPをダウンロードして、すべて展開します。
 2. 展開したフォルダーの **PANTHEON.exe** を開きます。
@@ -21,18 +21,21 @@ Windows 10 / 11（64ビット）、Microsoft Edge WebView2 Runtime が必要で�
 
 ランダムマッチ成立時には、両者のキャラクターとプレイヤー名をVSカットインで表示して自動で対戦が始まります。再戦では同じ部屋でキャラクターを変更し、双方の準備完了で開始します。
 
-## beta.7 の更新
+## beta.8 の更新
 
-Windows版とスマホ・PCのWeb版で、セーブデータを双方向に引き継げるようになりました。
+オーディンの追尾カラスをUへ移動し、スマホのスワイプ操作・画面・引き継ぎコード操作を改善しました。
 
 - 設定 → データ引き継ぎでコードを発行／入力。24時間有効・1回限り。
 - 神貨・解放キャラ・好感度・衣装・アイテム・称号・受取履歴・プロフィールを移行。
 - 操作・音量・画面設定は各端末に保持。既存進行状況は合算せず置き換え。
-- 戦闘ルールはbeta.6と共通です。
+- オーディンの追尾カラスはU、1羽につき0.5本。通常攻撃は槍のみ。
+- スマホは左の見えないアナログパッドをスワイプして8方向入力。
+- コピー／貼り付けボタンと送受信切替でコード引き継ぎを簡単に。
+- オンライン対戦は両者ともbeta.8へ更新してください。
 
 [スマホ・PCのWeb版](https://neon-break-arena-nov25.shiho-022685.chatgpt.site)
 
-[詳しい更新内容](https://github.com/OCToNe1001/pantheon-releases/releases/tag/v0.5.0-beta.7)
+[詳しい更新内容](https://github.com/OCToNe1001/pantheon-releases/releases/tag/v0.5.0-beta.8)
 
 ## beta.2 の追加機能
 
