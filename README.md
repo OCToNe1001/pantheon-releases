@@ -4,7 +4,7 @@
 
 ## ダウンロード
 
-**[Windows ベータ版 0.5.0-beta.6 をダウンロード（約418 MB）](https://github.com/OCToNe1001/pantheon-releases/releases/download/v0.5.0-beta.6/PANTHEON-Windows-v0.5.0-beta.6.zip)**
+**[Windows ベータ版 0.5.0-beta.7 をダウンロード（約418 MB）](https://github.com/OCToNe1001/pantheon-releases/releases/download/v0.5.0-beta.7/PANTHEON-Windows-v0.5.0-beta.7.zip)**
 
 1. ZIPをダウンロードして、すべて展開します。
 2. 展開したフォルダーの **PANTHEON.exe** を開きます。
@@ -21,18 +21,18 @@ Windows 10 / 11（64ビット）、Microsoft Edge WebView2 Runtime が必要で�
 
 ランダムマッチ成立時には、両者のキャラクターとプレイヤー名をVSカットインで表示して自動で対戦が始まります。再戦では同じ部屋でキャラクターを変更し、双方の準備完了で開始します。
 
-## beta.6 の更新
+## beta.7 の更新
 
-全24人・240章の交流ストーリーを加筆し、専用ノベル画面を追加。フレンド対戦のステージ抽選・準備完了を修正し、ミカエル・オーディン・フォルトゥナとジャストガードを調整しました。
+Windows版とスマホ・PCのWeb版で、セーブデータを双方向に引き継げるようになりました。
 
-- 全240章を8場面構成へ拡充。立ち絵・会話ログ・Enter／Space送りを備えたノベル画面。
-- お知らせをカテゴリ別の見出し・要約・詳細へ整理。
-- 招待部屋は毎試合ランダムステージ。準備完了は明示的なキャンセルまで保持。
-- ミカエルはUの追尾羽3枚＋背後ダッシュ。オーディンはカラス1羽0.5本。フォルトゥナはUで8秒のランダム強化。
-- ジャストガードは全高さから成立。オンライン試合中の一時停止を無効化。
-- 全24人のLv10衣装解放と戦闘ドット切り替えを検証。
+- 設定 → データ引き継ぎでコードを発行／入力。24時間有効・1回限り。
+- 神貨・解放キャラ・好感度・衣装・アイテム・称号・受取履歴・プロフィールを移行。
+- 操作・音量・画面設定は各端末に保持。既存進行状況は合算せず置き換え。
+- 戦闘ルールはbeta.6と共通です。
 
-[詳しい変更内容](https://github.com/OCToNe1001/pantheon-releases/releases/tag/v0.5.0-beta.6)
+[スマホ・PCのWeb版](https://neon-break-arena-nov25.shiho-022685.chatgpt.site)
+
+[詳しい更新内容](https://github.com/OCToNe1001/pantheon-releases/releases/tag/v0.5.0-beta.7)
 
 ## beta.2 の追加機能
 
