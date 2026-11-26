@@ -1,16 +1,18 @@
 {
   "schema": 1,
-  "build": 50008,
-  "version": "0.5.0-beta.8",
+  "build": 50010,
+  "version": "0.5.0-beta.10",
   "notes": [
-    "【オーディン・双鴉】追尾カラスを通常弱攻撃からUのスキルへ移動。通常の弱・強・下段・空中攻撃は槍のみで、カラス召喚によるメーター消費はありません。",
-    "【双鴉の消費・制限】Uは残量0.5本以上1本未満で1羽、1本以上で2羽を同時召喚。1羽につき0.5本を技の開始時に消費します。0.5本未満では使用不可。発生16F、各基礎威力12、寿命38F、命中による本人のゲージ獲得なし。飛行中は再召喚できず、ガード可能。立ち・しゃがみ・空中Uに対応します。",
-    "【スマホ・タッチ入力】戦闘中の入力受付エラーを修正。方向のスライドと複数指による移動・攻撃・防御の同時操作に対応。1Pのゲームパッドを認識するとタッチボタンを自動で隠し、切断時は再表示します。切替時は押しっぱなし入力を解除。オフラインは切断時に一時停止、オンライン対戦は止まりません。",
-    "【スマホ・アナログ操作】左の十字キー表示を廃止。画面左側の触れた位置を中心に、指のスワイプで8方向入力する見えないアナログパッドへ変更。左右で移動、上でジャンプ、下でしゃがみ、相手と反対の斜め下で下ガード。指を戻すとニュートラル、離すと停止。右の攻撃ボタンは半透明の線画アイコンと短い操作名にし、押した時は濃く表示します。",
-    "【スマホ・全画面】オンライン部屋からタイトル／モード選択へ戻る確認をゲーム内の画面へ変更。ブラウザー標準の確認画面による全画面解除を避け、モード選択とキャラ選択にも全画面ボタンを表示します。全画面APIに対応しない端末はホーム画面への追加を利用してください。",
-    "【スマホ・画面整理】モード選択を大きなタイルへ整理。キャラ選択は24人の顔を2段に保ち、オンライン操作の幅を広げました。戦闘中の名前・体力・神技ゲージを上部の別々の行に配置。設定とお知らせの文字サイズ・配色・余白を調整しました。",
-    "【引き継ぎ・コピー／貼り付け】Windows・Webとも「別の端末へ送る／この端末で受け取る」を切替。コードのそばに大きなコピー／貼り付けボタンを配置。発行コードはタップで全選択、入力コードは空白・改行・全角を整形。ブラウザーが直接貼り付けに非対応の場合は入力欄を選択して長押し貼り付けへ案内します。確認と置き換え承認後にのみセーブを移します。",
-    "【オンライン・セーブ】戦闘ルールをbeta.8へ更新。対戦相手もWindows beta.8／Web beta.8へ更新してください。旧版とはマッチングを分けます。神貨・好感度・衣装などのセーブと、Windows⇔スマホの引き継ぎコード機能は維持します。"
+    "【オンライン対戦】マッチ成立後に戦いが始まらない問題を修正しました。",
+    "【スマホ画面】ステージの選択欄を非表示にし、戦闘中の画面のずれを抑えました。",
+    "【スマホの始め方】初回にiPhone・Androidのホーム画面追加手順を表示します。",
+    "【名前の設定】初回は無料。変更には1,000神貨が必要で、設定・変更後3日間は変更できません。",
+    "【名前のチェック】禁止語を追加し、ローマ字や表記を変えた名前のチェックを強化しました。",
+    "【メンテナンス】更新作業中はメンテナンス画面を表示します。進行中の対戦は終了まで続けられます。",
+    "【メールボックス】新しい報酬にNEWを表示。デイリー報酬もメールから受け取れます。",
+    "【Web版】2回目に開けない問題を修正。設定の画面項目にスクショ互換モードを追加しました。",
+    "【お知らせ】変更点を短く、読みやすく整理しました。",
+    "【セーブ】進行状況を引き継いで遊べます。WindowsとWebのデータ引き継ぎにも対応しています。"
   ],
   "objectsBaseUrl": "https://github.com/OCToNe1001/pantheon-releases/releases/download/v0.5.0-beta.2",
   "files": [
@@ -27,12 +29,12 @@
     {
       "path": "PANTHEON.Updater.exe",
       "bytes": 125440,
-      "sha256": "d5daa6d30704a7ef2833ab590b2e4f28d966ef7d002365b76687aeb1e9e9d3c4"
+      "sha256": "175dad21a3906520071f73a32cd3575735eae5886f377af9041666f3eca1ccf9"
     },
     {
       "path": "PANTHEON.exe",
-      "bytes": 155136,
-      "sha256": "a0b0901477ba44ffe3af79105323f727c3214fe19ec3252e85675d1c8b268938"
+      "bytes": 156160,
+      "sha256": "600143f2c7c09584e0a6afd96385e34036d52468b82dff8a42daacf956c20f04"
     },
     {
       "path": "PANTHEON.exe.config",
@@ -56,8 +58,8 @@
     },
     {
       "path": "bridge.js",
-      "bytes": 1659,
-      "sha256": "489a547e875d029cf31486ac73cad1e648e9cca1f27cef1694297c1bf101d7dd"
+      "bytes": 1711,
+      "sha256": "eb9c34522f56ee93097beee029a72d4eb90743076cb4224c575505a507dbdae5"
     },
     {
       "path": "game/aerial-moves.mjs",
@@ -111,8 +113,8 @@
     },
     {
       "path": "game/app.mjs",
-      "bytes": 58839,
-      "sha256": "1f0f281cec94154e03a78ceabcd4c1c0d1f74a56d233dad2f2dcf4cc2073831f"
+      "bytes": 59700,
+      "sha256": "f12c61b81429e561ed08ea387df415351f1103c2c7b3b9e006361de07cb24ab2"
     },
     {
       "path": "game/arcade.mjs",
@@ -1611,13 +1613,13 @@
     },
     {
       "path": "game/community-ui.mjs",
-      "bytes": 9695,
-      "sha256": "da6ea82c18639ebed60dcacf3a55bc9d1cb6dfc35d9e15aaf1700464393e5e7e"
+      "bytes": 13019,
+      "sha256": "4124026d53a310f745c353b308aed15a3e3ce5a767930257dfc9312319fb0593"
     },
     {
       "path": "game/community.css",
-      "bytes": 3896,
-      "sha256": "756a39bd78829a6e26d881dd31d252d9b3d8477cca9eea27286f15c184aa61ae"
+      "bytes": 5813,
+      "sha256": "f89c4dd59dafb656f906f8e8a886eac98edeaa4c1fa85bb8d66257c11dcf848a"
     },
     {
       "path": "game/community.mjs",
@@ -1686,13 +1688,23 @@
     },
     {
       "path": "game/index.html",
-      "bytes": 33866,
-      "sha256": "6bf6a0196f611701dc1321ad6047cbf5064951d80eb5b0fc11b18fce2a34ad99"
+      "bytes": 33869,
+      "sha256": "60fa8e0403f1c5a8757c1bc269801d65bf82309d973542781f63d23df84f96b7"
     },
     {
       "path": "game/loki.mjs",
       "bytes": 542,
       "sha256": "a81eb61eb86b68bb962b37388925659147b80ab4ad2d08c957958287230fe65d"
+    },
+    {
+      "path": "game/mail-notifications.mjs",
+      "bytes": 1440,
+      "sha256": "7bb910d2808b876df46b23a915f52df616e001cedd9a356f3da896211315acc1"
+    },
+    {
+      "path": "game/maintenance.mjs",
+      "bytes": 3434,
+      "sha256": "9c2063f8897f3f315584838b27213d952186da1db32cc8c95f48174f13c02479"
     },
     {
       "path": "game/match-found.css",
@@ -1740,9 +1752,14 @@
       "sha256": "aaef4b3dbd4d71f26d26bd3405a070de54be86d766467d80affd3f44ccd5631b"
     },
     {
+      "path": "game/name-change.mjs",
+      "bytes": 1449,
+      "sha256": "954c72644822a6cdca81d8b9db77cacd89fac405fe19ff7b9facf8f80c5af6b5"
+    },
+    {
       "path": "game/navigation.mjs",
-      "bytes": 1057,
-      "sha256": "f2c56ec2a06081faed6a0c9a259ba361ff5c2f5e79c48ba4d88111ea86ca145a"
+      "bytes": 1092,
+      "sha256": "7f167841533dceb40765766ed08adc922e458257a2d1418e7f2dde984e880542"
     },
     {
       "path": "game/netcode.mjs",
@@ -1751,8 +1768,8 @@
     },
     {
       "path": "game/notice-view.mjs",
-      "bytes": 1798,
-      "sha256": "b18e213ad0d2d8e9bd7be9b887ac9c458082729e0a21443a8bfb98803a0dfd94"
+      "bytes": 1600,
+      "sha256": "9c79dce10a214574986b7e85619fa06768c4de3f9efb3a7cc6f969594a8e170a"
     },
     {
       "path": "game/online.css",
@@ -1776,18 +1793,33 @@
     },
     {
       "path": "game/profile-rules.mjs",
-      "bytes": 3893,
-      "sha256": "752690469409f5321f00512e48cc7ca54362958694cc1699ae95f07aaa442adf"
+      "bytes": 8758,
+      "sha256": "22f333ec67c96209a69684094f753dc33939951908e144aff4e628fe2eb0dab5"
+    },
+    {
+      "path": "game/profile-settings.mjs",
+      "bytes": 4764,
+      "sha256": "73e614264a27ed5e1ddf77bf5f6457ddc95270390a3a941c4619b00f7e5bc0e5"
+    },
+    {
+      "path": "game/profile-setup.css",
+      "bytes": 1248,
+      "sha256": "5ee232c38ca5ea31a1393ae2e8d142225b8c9b03f5ff945a6d8463d86dea193f"
+    },
+    {
+      "path": "game/profile-setup.mjs",
+      "bytes": 2710,
+      "sha256": "cf11641ffa1704d2752144f133873119f59be8ac9762d850881c2f77a871bd82"
     },
     {
       "path": "game/profile.mjs",
-      "bytes": 2578,
-      "sha256": "50d7e8d840b811c2c99eebbaab24bcf5f8ee2619ae0ae773763ed3cfb7c9cece"
+      "bytes": 1474,
+      "sha256": "a7e4e9ed765b149fae8c7380e9e0603ac99aec44df1655549e30f1a46d07e344"
     },
     {
       "path": "game/progression.mjs",
-      "bytes": 7810,
-      "sha256": "3aee7cf2dfcaf4300786728fe3df2c6ae5bd31098f2687ff2193e1654f43ea44"
+      "bytes": 9048,
+      "sha256": "b4e8411c151655eae20f113607a498f56c621d3c5c17899681978669d40f7234"
     },
     {
       "path": "game/recovery-hulls.mjs",
@@ -1801,8 +1833,8 @@
     },
     {
       "path": "game/release-notes.mjs",
-      "bytes": 3157,
-      "sha256": "c456467df89489a60a576f824a10dcdc319fe9dd49767eb01eaea8cc48295de8"
+      "bytes": 1301,
+      "sha256": "c9c377f7798e72460475f985c9aadfde30577684cbde203bc8ea2c5a087c520b"
     },
     {
       "path": "game/render.mjs",
@@ -1851,8 +1883,8 @@
     },
     {
       "path": "game/shell.mjs",
-      "bytes": 12673,
-      "sha256": "0bcf219c846591874f9f51f4b6b52fae0f7a9e8aaa53522a7095ad96af034e96"
+      "bytes": 12915,
+      "sha256": "e88b5051eb728576ddb35d24a4c0d0f78e56583357a2567116ccde0821ffdd38"
     },
     {
       "path": "game/sprite-data.mjs",
@@ -1931,13 +1963,13 @@
     },
     {
       "path": "はじめに.txt",
-      "bytes": 27594,
-      "sha256": "8f9ef35061c6c35b71ed7e50254ccf0058181099f0d51c10a6875ed0b5ae8cd3"
+      "bytes": 27595,
+      "sha256": "b768783f0d177f8290a2231052fc1835f5ba2a72488ef3584fda54ce3f3bf9a5"
     },
     {
       "path": "配布ファイル一覧.json",
-      "bytes": 67938,
-      "sha256": "32a26463746320d7ee6d900a21dd2e6681c211fdb3ef1ac7aea2a6aaeb4bdc5c"
+      "bytes": 68916,
+      "sha256": "8860f53df7586ef14f9367e27c3dfeee465913cfb9f93ef958bcfd52eef223da"
     }
   ]
 }
