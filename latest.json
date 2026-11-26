@@ -1,18 +1,13 @@
 {
   "schema": 1,
-  "build": 50010,
-  "version": "0.5.0-beta.10",
+  "build": 50011,
+  "version": "0.5.0-beta.11",
   "notes": [
-    "【オンライン対戦】マッチ成立後に戦いが始まらない問題を修正しました。",
-    "【スマホ画面】ステージの選択欄を非表示にし、戦闘中の画面のずれを抑えました。",
-    "【スマホの始め方】初回にiPhone・Androidのホーム画面追加手順を表示します。",
-    "【名前の設定】初回は無料。変更には1,000神貨が必要で、設定・変更後3日間は変更できません。",
-    "【名前のチェック】禁止語を追加し、ローマ字や表記を変えた名前のチェックを強化しました。",
-    "【メンテナンス】更新作業中はメンテナンス画面を表示します。進行中の対戦は終了まで続けられます。",
-    "【メールボックス】新しい報酬にNEWを表示。デイリー報酬もメールから受け取れます。",
-    "【Web版】2回目に開けない問題を修正。設定の画面項目にスクショ互換モードを追加しました。",
-    "【お知らせ】変更点を短く、読みやすく整理しました。",
-    "【セーブ】進行状況を引き継いで遊べます。WindowsとWebのデータ引き継ぎにも対応しています。"
+    "【メンテナンス】OP画面からスタートを押したときに案内を表示します。",
+    "【OPへ戻る】メンテナンス案内のボタン・Esc・パッドの戻る操作でOPへ戻れます。",
+    "【終了・設定】メンテナンス中もOPの設定と、Windows版のゲーム終了を使えます。",
+    "【スマホ】初回のホーム画面追加ガイド、オンライン対戦開始の修正も含みます。",
+    "【セーブ】これまでの進行状況をそのまま引き継ぎます。"
   ],
   "objectsBaseUrl": "https://github.com/OCToNe1001/pantheon-releases/releases/download/v0.5.0-beta.2",
   "files": [
@@ -29,12 +24,12 @@
     {
       "path": "PANTHEON.Updater.exe",
       "bytes": 125440,
-      "sha256": "175dad21a3906520071f73a32cd3575735eae5886f377af9041666f3eca1ccf9"
+      "sha256": "f4ab3a86efc42ba6c5bb3280264de69819fcf12ae996df562b8c29850f3a761f"
     },
     {
       "path": "PANTHEON.exe",
       "bytes": 156160,
-      "sha256": "600143f2c7c09584e0a6afd96385e34036d52468b82dff8a42daacf956c20f04"
+      "sha256": "3bfa481f303d08202e0bc1bd8f9819bbc8b8a91db6a2a07997a60df4c3d8c4c7"
     },
     {
       "path": "PANTHEON.exe.config",
@@ -59,7 +54,7 @@
     {
       "path": "bridge.js",
       "bytes": 1711,
-      "sha256": "eb9c34522f56ee93097beee029a72d4eb90743076cb4224c575505a507dbdae5"
+      "sha256": "941f576b2f8b7510768dea0a146265dcfc358e78e1a891fc47a3743e015c5dc1"
     },
     {
       "path": "game/aerial-moves.mjs",
@@ -113,8 +108,8 @@
     },
     {
       "path": "game/app.mjs",
-      "bytes": 59700,
-      "sha256": "f12c61b81429e561ed08ea387df415351f1103c2c7b3b9e006361de07cb24ab2"
+      "bytes": 60187,
+      "sha256": "3a3327c65689c7c504149516fdd87a5b838303fcdbfeaadc00d2216fb0ac69f9"
     },
     {
       "path": "game/arcade.mjs",
@@ -1689,7 +1684,7 @@
     {
       "path": "game/index.html",
       "bytes": 33869,
-      "sha256": "60fa8e0403f1c5a8757c1bc269801d65bf82309d973542781f63d23df84f96b7"
+      "sha256": "9aa7dba8996537ad8021f5a853466995d81dc229351cb12a8aeccf56e8f26bb2"
     },
     {
       "path": "game/loki.mjs",
@@ -1703,8 +1698,8 @@
     },
     {
       "path": "game/maintenance.mjs",
-      "bytes": 3434,
-      "sha256": "9c2063f8897f3f315584838b27213d952186da1db32cc8c95f48174f13c02479"
+      "bytes": 3522,
+      "sha256": "f62d1b508adeef1825c6ea0a8853c293bbec6665a8431481569a090cef677562"
     },
     {
       "path": "game/match-found.css",
@@ -1758,8 +1753,8 @@
     },
     {
       "path": "game/navigation.mjs",
-      "bytes": 1092,
-      "sha256": "7f167841533dceb40765766ed08adc922e458257a2d1418e7f2dde984e880542"
+      "bytes": 1150,
+      "sha256": "ac5f6b49edd2bc01fc75375fb2453222b68ea4daa477d8cd20cf6f53f1c0c085"
     },
     {
       "path": "game/netcode.mjs",
@@ -1808,8 +1803,8 @@
     },
     {
       "path": "game/profile-setup.mjs",
-      "bytes": 2710,
-      "sha256": "cf11641ffa1704d2752144f133873119f59be8ac9762d850881c2f77a871bd82"
+      "bytes": 2748,
+      "sha256": "d11f70869e10726a773cc35d1f6a57284ff68f1b841e801597ab570af8760a77"
     },
     {
       "path": "game/profile.mjs",
@@ -1833,8 +1828,8 @@
     },
     {
       "path": "game/release-notes.mjs",
-      "bytes": 1301,
-      "sha256": "c9c377f7798e72460475f985c9aadfde30577684cbde203bc8ea2c5a087c520b"
+      "bytes": 611,
+      "sha256": "b5e57283cf0e70f22365d49bc129d257a6a06f9043d717a636521da38c882d47"
     },
     {
       "path": "game/render.mjs",
@@ -1883,8 +1878,8 @@
     },
     {
       "path": "game/shell.mjs",
-      "bytes": 12915,
-      "sha256": "e88b5051eb728576ddb35d24a4c0d0f78e56583357a2567116ccde0821ffdd38"
+      "bytes": 13262,
+      "sha256": "234e1038d925aa5a45b330a1633da0b40b79ecd8f744035235e9ef5df16f2ef7"
     },
     {
       "path": "game/sprite-data.mjs",
@@ -1964,12 +1959,12 @@
     {
       "path": "はじめに.txt",
       "bytes": 27595,
-      "sha256": "b768783f0d177f8290a2231052fc1835f5ba2a72488ef3584fda54ce3f3bf9a5"
+      "sha256": "0a05c7afa6948df1e0948379d6b767843a07f47ef59680838b1e693b9579a5a8"
     },
     {
       "path": "配布ファイル一覧.json",
-      "bytes": 68916,
-      "sha256": "8860f53df7586ef14f9367e27c3dfeee465913cfb9f93ef958bcfd52eef223da"
+      "bytes": 68914,
+      "sha256": "eb11c02333c4559b184d6cc4bbb7b8cc58d143f0a3d40635a18395b18b324eef"
     }
   ]
 }
